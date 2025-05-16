@@ -1,0 +1,39 @@
+Acetic acid
+64-19-7
+
+H226
+H314
+
+P280
+P305+P351+P338
+P310
+
+
+Deuterated chloroform
+865-49-6
+
+H302
+H315
+H351
+H373
+
+P281
+
+
+Water
+7732-18-5
+
+Sodium Chloride
+7647-14-5
+
+3-Amino-9-ethylcarbazole
+132-32-1
+
+H350
+
+P201
+P202
+P281
+P308+P313
+P405
+P501

@@ -1,0 +1,102 @@
+/* body,
+html {
+    background-color: #cccccc;
+} */
+
+@media screen and (min-width: 900px) {
+    html {
+        /* margin-left: calc(100vw - 100%); */
+        margin-right: calc(100% - 100vw);
+    }
+}
+
+/* html {
+    overflow-y: scroll;
+} */
+
+
+
+@media screen and (min-width: 1400px) {
+    .svg-icon {
+        width: 4vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .svg-icon {
+        width: 4vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .svg-icon {
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .svg-icon {
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .svg-icon {
+        width: 6vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .svg-icon {
+        width: 8vw;
+    }
+}
+.btnhover:hover {
+    background-color: #dde0e3;
+}
+
+@media print and (min-width: 1400px) {
+    .svg-icon {
+        width: 4vw;
+    }
+}
+
+@media print and (max-width: 1400px) {
+    .svg-icon {
+        width: 4vw;
+    }
+}
+
+@media print and (max-width: 1200px) {
+    .svg-icon {
+        width: 5vw;
+    }
+}
+
+@media print and (max-width: 992px) {
+    .svg-icon {
+        width: 5vw;
+    }
+}
+
+@media print and (max-width: 768px) {
+    .svg-icon {
+        width: 6vw;
+    }
+}
+
+@media print and (max-width: 576px) {
+    .svg-icon {
+        width: 8vw;
+    }
+}
+
+@media print {
+    [id^="compound"] {
+        box-shadow: none!important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+}
