@@ -5,7 +5,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/karelplanken/cpc)
 ![GitHub issues](https://img.shields.io/github/issues/karelplanken/cpc)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/karelplanken/cpc)
-![License](https://img.shields.io/github/license/karelplanken/cpc?cacheSeconds=3600)
+![License](https://img.shields.io/github/license/karelplanken/cpc)
 ![Tech Stack](https://img.shields.io/badge/Made%20with-JavaScript%2C%20HTML%2C%20CSS%2C%20Bootstrap%2C%20Python%20-blueviolet)
 
 ## <a id='toc'>Table of Contents</a>
