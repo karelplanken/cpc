@@ -42,7 +42,8 @@ class Compound {
             else if (toleratedSZWcasrnsArray.indexOf(array[i]) !== -1) {
                 resultArrayOfObjects.push({
                     'casrn': `${array[i]}`,
-                    'text': 'CASRN komt voor in SZW lijst maar is niet verboden want Cat. 2 stof.',
+                    'text': 'CASRN komt voor in SZW lijst maar is niet verboden want Cat. 2 stof.<br />' +
+                        '<strong>Let op:</strong> Blootstelling moet geregistreerd worden!',
                     'allowed': true,
                     'category': 2,
                     // 64-17-5
@@ -83,7 +84,7 @@ class Compound {
     constructPhrases(array, phraseArrayOfObj, checkH) {
         let resultArrayOfObjects = [];
         let objKeys = Object.keys(phraseArrayOfObj);
-        
+
         for (let i = 0; i < array.length; i++) {
             let tempObj = {};
             if (objKeys.indexOf(array[i]) !== -1) {
