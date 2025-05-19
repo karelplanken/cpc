@@ -5,6 +5,7 @@
     Therefore this is part of the Controller but also is the View. The Model is contained in 
     the data processing and library scripts, see below.
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,209 +46,261 @@
     <title>CompoundPolicyCheck</title>
 </head>
 
-<body>
-    <div class="col-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
-        <h1 class="text-center my-3 d-print-none">Compound Policy Check</h1>
-        <div class="border shadow-lg bg-white p-3 rounded-3 mb-3 d-print-none">
-            <div class="col-12 px-0">
-                <div class="accordion my-3" id="accordionWarningMessage">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseWaringMessage" aria-expanded="true"
-                                aria-controls="collapseWaringMessage">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor"
-                                    class="bi text-danger" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path
-                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="collapseWaringMessage" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionWarningMessage">
-                            <div class="accordion-body">
-                                <p>
-                                    <span class="text-danger"><strong>Let op:</strong></span> Advies is om de nieuwste
-                                    versie FireFox of Chrome te gebruiken, andere browsers zijn niet getest. De werking
-                                    en/of uitkomst op andere browsers kan afwijken of leiden tot merkwaardige en
-                                    misschien wel onbetrouwbare resultaten.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 px-0">
-                <div class="accordion my-3" id="accordionExplanation">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExplanation" aria-expanded="true"
-                                aria-controls="collapseExplanation">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor"
-                                    class="bi text-success" viewBox="0 0 16 16">
-                                    <path
-                                        d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="collapseExplanation" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionExplanation">
-                            <div class="accordion-body container-fluid">
-                                <p>
-                                    <span class="text-success"><strong>Toelichting:</strong></span> Deze app helpt je
-                                    bij het controleren of een stof verboden is op <strong>het laboratorium</strong>.
-                                    Met stof wordt hier een zuivere stof, dus &eacute;&eacute;n <abbr
-                                        data-bs-toggle="tooltip"
-                                        title="Chemical Abstracts Service Registration Number">CAS RN</abbr>, of een
-                                    mengsel, dus meerdere CAS RNs bedoeld. Let op, wanneer een stof niet verboden is dan
-                                    wil dat niet zeggen dat de stof is toegestaan want dat hangt af van meer factoren.
-                                    Je kunt een stof controleren door gebruik te maken van &eacute;&eacute;n van de twee
-                                    mogelijke invoer methoden, namelijk een bestandsinvoer en een handmatige invoer.
-                                </p>
-                                <p>
-                                    Voor de bestandsinvoer heb je een <abbr data-bs-toggle="tooltip"
-                                        title="Safety Data Sheet">SDS</abbr> in de vorm van een <abbr
-                                        data-bs-toggle="tooltip" title="Portable Document Format">pdf</abbr> nodig, dus
-                                    geen pdf afbeelding. Gebruik bij voorkeur een SDS van Sigma-Aldrich, deze blijkt
-                                    in
-                                    vergelijking met anderen altijd meer volledig. Heb je moeite om een SDS te
-                                    vinden,
-                                    gebruik dan deze <a href="https://chemicalsafety.com/sds-search/" target="_blank"
-                                        rel="noopener noreferrer nofollow">Safety Data Sheet Search</a> app.
-                                    <strong>Let op:</strong> de SDS die je als invoer gebruikt moet tenminste geldige
-                                    H
-                                    code(s) hebben (H zinnen worden niet gedetecteerd). De handmatige invoer vereist
-                                    tenminste
-                                    &eacute;&eacute;n CAS RN of H code, de P code is optioneel.
-                                </p>
-                                <p>
-                                    Voor telkens &eacute;&eacute;n stof kun je een raport opmaken waarin uitsluitsel
-                                    gegeven wordt of de stof verboden is. Voer je meerdere stoffen tegelijkertijd in dan
-                                    kan je, wanneer de uitslag <em>verboden</em> luidt, achteraf niet meer herleiden
-                                    voor welke van de ingevoerde stoffen deze uitslag geldt. Je kunt overigens gewoon de
-                                    raporten stapelen, dat wil zeggen als je er &eacute;&eacute;n gegenereerd hebt kun
-                                    je een volgende maken door opnieuw invoer te selecteren. De individuele raporten
-                                    zijn middels een knop te verwijderen. Een browser <em>refresh</em> verwijdert alle
-                                    invoer en resultaten en maakt een begin met schone lei mogelijk.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 px-0">
-                <div class="accordion my-3" id="accordionLegend">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseLegend" aria-expanded="true" aria-controls="collapseLegend">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor"
-                                    class="bi text-primary" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path
-                                        d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="collapseLegend" class="accordion-collapse collapse" data-bs-parent="#accordionLegend">
-                            <div class="accordion-body">
-                                <dl>
-                                    <dt class="cat0 text-danger">Cat 0:</dt>
-                                    <dd>
-                                        Niet toegestaan omdat stof voorkomt in de lijst van verboden H codes en/of lijst
-                                        van verboden CAS RNs.
-                                    </dd>
-                                    <dt class="cat1 text-danger">Cat 1:</dt>
-                                    <dd>
-                                        Een stof die hieronder valt is tijdelijk toegestaan maar (nog) niet via deze app
-                                        op te vragen.
-                                    </dd>
-                                    <dt class="cat2 text-warning">Cat 2:</dt>
-                                    <dd>
-                                        Stof komt voor in lijst verboden H codes en/of CAS RN maar is opgenomen in de
-                                        lijst met expliciet toegestane stoffen omdat deze essentieel is voor praktijk
-                                        onderwijs, projecten binnen het onderwijs of onderzoek of &quot;veelvuldig&quot;
-                                        wordt
-                                        gebruikt. Een stof die hieronder valt is dus gedoogd.
-                                    </dd>
-                                    <dt class="cat3 text-success">Cat 3:</dt>
-                                    <dd>
-                                        Niet verboden omdat de stof niet voorkomt op lijst verboden H codes en/of
-                                        CAS RNs.
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="border shadow-lg bg-white p-3 rounded-3 mb-3 d-print-none">
-            <div class="border rounded-3 bg-white">
-                <div class="row row-cols-12 mx-1 ">
-                    <div class="container-fluid mt-3">
-                        <h2 class="h4">Selecteer invoer methode:</h2>
-                    </div>
-                </div>
-                <div class="form-check  form-check-inline mx-3 mb-3">
-                    <input class="form-check-input" type="radio" name="inputMethod" id="fileInputRadio">
-                    <label class="form-check-label" for="fileInputRadio">
-                        SDS pdf bestand
-                    </label>
-                </div>
-                <div class="form-check  form-check-inline mx-3">
-                    <input class="form-check-input" type="radio" name="inputMethod" id="manualInputRadio">
-                    <label class="form-check-label" for="manualInputRadio">
-                        Handmatige invoer
-                    </label>
-                </div>
-                <form id="fileInputFields" class="needs-validation" hidden novalidate>
-                    <div class="row row-cols-12 m-1">
-                        <div class="container-fluid mb-3">
-                            <span class="h4">Bestand:</span>
-                        </div>
-                    </div>
-                    <div class="row row-cols-12 m-1">
-                        <div id="fileInput" class="mb-3">
-                            <div class="input-group">
-                                <input type="file" class="form-control" id="inputPDF" accept=".pdf"
-                                    data-bs-toggle="tooltip" title="Selecteer bestand" required>
-                                <label class="input-group-text btnhover" data-bs-toggle="tooltip" title="Maak raport"
-                                    role="button" id="checkSDSpdf" type="submit">Check
-                                    SDS</label>
-                                <div class="valid-feedback">
-                                    Lijkt ok&hellip;
-                                </div>
-                                <div class="invalid-feedback">
-
+<body class="d-flex flex-column min-vh-100">
+    <main class="flex-grow-1">
+        <div class="col-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+            <h1 class="text-center my-3 d-print-none">Compound Policy Check</h1>
+            <div class="border shadow-lg bg-white p-3 rounded-3 mb-3 d-print-none">
+                <div class="col-12 px-0">
+                    <div class="accordion my-3" id="accordionWarningMessage">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWaringMessage" aria-expanded="true"
+                                    aria-controls="collapseWaringMessage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor"
+                                        class="bi text-danger" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="collapseWaringMessage" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionWarningMessage">
+                                <div class="accordion-body">
+                                    <p>
+                                        <span class="text-danger"><strong>Let op:</strong></span> Advies is om de
+                                        nieuwste
+                                        versie FireFox of Chrome te gebruiken, andere browsers zijn niet getest. De
+                                        werking
+                                        en/of uitkomst op andere browsers kan afwijken of leiden tot merkwaardige en
+                                        misschien wel onbetrouwbare resultaten.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </form>
-                <form id="manualInputFields" class="needs-validation" hidden novalidate>
-                    <div id="manualInput" class="mb-3">
+                </div>
+
+
+                <div class="col-12 px-0">
+                    <div class="accordion my-3" id="accordionExplanation">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExplanation" aria-expanded="true"
+                                    aria-controls="collapseExplanation">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor"
+                                        class="bi text-success" viewBox="0 0 16 16">
+                                        <path
+                                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="collapseExplanation" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExplanation">
+                                <div class="accordion-body container-fluid">
+                                    <p>
+                                        <span class="text-success"><strong>Toelichting:</strong></span> Deze app helpt
+                                        je
+                                        bij het controleren of een stof verboden is op <strong>het
+                                            laboratorium</strong>.
+                                        Met stof wordt hier een zuivere stof, dus &eacute;&eacute;n <abbr
+                                            data-bs-toggle="tooltip"
+                                            title="Chemical Abstracts Service Registration Number">CAS RN</abbr>, of een
+                                        mengsel, dus meerdere CAS RNs bedoeld. Let op, wanneer een stof niet verboden is
+                                        dan
+                                        wil dat niet zeggen dat de stof is toegestaan want dat hangt af van meer
+                                        factoren.
+                                        Je kunt een stof controleren door gebruik te maken van &eacute;&eacute;n van de
+                                        twee
+                                        mogelijke invoer methoden, namelijk een bestandsinvoer en een handmatige invoer.
+                                    </p>
+                                    <p>
+                                        Voor de bestandsinvoer heb je een <abbr data-bs-toggle="tooltip"
+                                            title="Safety Data Sheet">SDS</abbr> in de vorm van een <abbr
+                                            data-bs-toggle="tooltip" title="Portable Document Format">pdf</abbr> nodig,
+                                        dus
+                                        geen pdf afbeelding. Gebruik bij voorkeur een SDS van Sigma-Aldrich, deze blijkt
+                                        in
+                                        vergelijking met anderen altijd meer volledig. Heb je moeite om een SDS te
+                                        vinden,
+                                        gebruik dan deze <a href="https://chemicalsafety.com/sds-search/"
+                                            target="_blank" rel="noopener noreferrer nofollow">Safety Data Sheet
+                                            Search</a> app.
+                                        <strong>Let op:</strong> de SDS die je als invoer gebruikt moet tenminste
+                                        geldige
+                                        H
+                                        code(s) hebben (H zinnen worden niet gedetecteerd). De handmatige invoer vereist
+                                        tenminste
+                                        &eacute;&eacute;n CAS RN of H code, de P code is optioneel.
+                                    </p>
+                                    <p>
+                                        Voor telkens &eacute;&eacute;n stof kun je een raport opmaken waarin uitsluitsel
+                                        gegeven wordt of de stof verboden is. Voer je meerdere stoffen tegelijkertijd in
+                                        dan
+                                        kan je, wanneer de uitslag <em>verboden</em> luidt, achteraf niet meer herleiden
+                                        voor welke van de ingevoerde stoffen deze uitslag geldt. Je kunt overigens
+                                        gewoon de
+                                        raporten stapelen, dat wil zeggen als je er &eacute;&eacute;n gegenereerd hebt
+                                        kun
+                                        je een volgende maken door opnieuw invoer te selecteren. De individuele raporten
+                                        zijn middels een knop te verwijderen. Een browser <em>refresh</em> verwijdert
+                                        alle
+                                        invoer en resultaten en maakt een begin met schone lei mogelijk.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 px-0">
+                    <div class="accordion my-3" id="accordionLegend">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLegend" aria-expanded="true"
+                                    aria-controls="collapseLegend">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor"
+                                        class="bi text-primary" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="collapseLegend" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionLegend">
+                                <div class="accordion-body">
+                                    <dl>
+                                        <dt class="cat0 text-danger">Cat 0:</dt>
+                                        <dd>
+                                            Niet toegestaan omdat stof voorkomt in de lijst van verboden H codes en/of
+                                            lijst
+                                            van verboden CAS RNs.
+                                        </dd>
+                                        <dt class="cat1 text-danger">Cat 1:</dt>
+                                        <dd>
+                                            Een stof die hieronder valt is tijdelijk toegestaan maar (nog) niet via deze
+                                            app
+                                            op te vragen.
+                                        </dd>
+                                        <dt class="cat2 text-warning">Cat 2:</dt>
+                                        <dd>
+                                            Stof komt voor in lijst verboden H codes en/of CAS RN maar is opgenomen in
+                                            de
+                                            lijst met expliciet toegestane stoffen omdat deze essentieel is voor
+                                            praktijk
+                                            onderwijs, projecten binnen het onderwijs of onderzoek of
+                                            &quot;veelvuldig&quot;
+                                            wordt
+                                            gebruikt. Een stof die hieronder valt is dus gedoogd.
+                                        </dd>
+                                        <dt class="cat3 text-success">Cat 3:</dt>
+                                        <dd>
+                                            Niet verboden omdat de stof niet voorkomt op lijst verboden H codes en/of
+                                            CAS RNs.
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border shadow-lg bg-white p-3 rounded-3 mb-3 d-print-none">
+                <div class="border rounded-3 bg-white">
+                    <div class="row row-cols-12 mx-1 ">
+                        <div class="container-fluid mt-3">
+                            <h2 class="h4">Selecteer invoer methode:</h2>
+                        </div>
+                    </div>
+                    <div class="form-check  form-check-inline mx-3 mb-3">
+                        <input class="form-check-input" type="radio" name="inputMethod" id="fileInputRadio">
+                        <label class="form-check-label" for="fileInputRadio">
+                            SDS pdf bestand
+                        </label>
+                    </div>
+                    <div class="form-check  form-check-inline mx-3">
+                        <input class="form-check-input" type="radio" name="inputMethod" id="manualInputRadio">
+                        <label class="form-check-label" for="manualInputRadio">
+                            Handmatige invoer
+                        </label>
+                    </div>
+                    <form id="fileInputFields" class="needs-validation" hidden novalidate>
+                        <div class="row row-cols-12 m-1">
+                            <div class="container-fluid mb-3">
+                                <span class="h4">Bestand:</span>
+                            </div>
+                        </div>
+                        <div class="row row-cols-12 m-1">
+                            <div id="fileInput" class="mb-3">
+                                <div class="input-group">
+                                    <input type="file" class="form-control" id="inputPDF" accept=".pdf"
+                                        data-bs-toggle="tooltip" title="Selecteer bestand" required>
+                                    <label class="input-group-text btnhover" data-bs-toggle="tooltip"
+                                        title="Maak raport" role="button" id="checkSDSpdf" type="submit">Check
+                                        SDS</label>
+                                    <div class="valid-feedback">
+                                        Lijkt ok&hellip;
+                                    </div>
+                                    <div class="invalid-feedback">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="manualInputFields" class="needs-validation" hidden novalidate>
+                        <div id="manualInput" class="mb-3">
+                            <div class="row row-cols-12 mx-1 mb-3">
+                                <div class="col-6">
+                                    <span class="h4">CAS RN(s):</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <button id="casMinusBtn" type="button" class="rounded-3 btnhover"
+                                        data-bs-toggle="tooltip" title="Casrn verwijderen" hidden>-</button>
+                                    <button id="casPlusBtn" type="button" class="rounded-3 btnhover"
+                                        data-bs-toggle="tooltip" title="Casrn toevoegen">+</button>
+                                </div>
+                            </div>
+                            <div id="manCasInput" class="row row-cols-12 m-1 mb-3">
+                                <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                    <input type="text" class="form-control px-2" placeholder="00000000-00-0"
+                                        pattern="\d{2,8}-\d{2}-\d{1}" minlength="7" maxlength="13">
+                                    <div class="valid-feedback">
+                                        Lijkt ok&hellip;
+                                    </div>
+                                    <div class="invalid-feedback">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row row-cols-12 mx-1 mb-3">
                             <div class="col-6">
-                                <span class="h4">CAS RN(s):</span>
+                                <span class="h4">H zin(nen):</span>
                             </div>
                             <div class="col-6 text-end">
-                                <button id="casMinusBtn" type="button" class="rounded-3 btnhover"
-                                    data-bs-toggle="tooltip" title="Casrn verwijderen" hidden>-</button>
-                                <button id="casPlusBtn" type="button" class="rounded-3 btnhover"
-                                    data-bs-toggle="tooltip" title="Casrn toevoegen">+</button>
+                                <button id="hMinusBtn" type="button" class="rounded-3 btnhover" data-bs-toggle="tooltip"
+                                    title="H code verwijderen" hidden>-</button>
+                                <button id="hPlusBtn" type="button" class="rounded-3 btnhover" data-bs-toggle="tooltip"
+                                    title="H code toevoegen">+</button>
                             </div>
                         </div>
-                        <div id="manCasInput" class="row row-cols-12 m-1 mb-3">
-                            <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                <input type="text" class="form-control px-2" placeholder="00000000-00-0"
-                                    pattern="\d{2,8}-\d{2}-\d{1}" minlength="7" maxlength="13">
+                        <div id="manHphraseInput" class="row row-cols-12 mx-1 mb-3">
+                            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                                <input class="form-control px-2" list="hDatalistOptions" placeholder="H123"
+                                    pattern="((H[2-4]{1}\d{2}\s*\+\s*){0,2}(H[2-4]{1}\d{2}))" minlength="4"
+                                    maxlength="14">
+                                <datalist id="hDatalistOptions">
+                                </datalist>
                                 <div class="valid-feedback">
                                     Lijkt ok&hellip;
                                 </div>
@@ -256,73 +309,60 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row row-cols-12 mx-1 mb-3">
-                        <div class="col-6">
-                            <span class="h4">H zin(nen):</span>
-                        </div>
-                        <div class="col-6 text-end">
-                            <button id="hMinusBtn" type="button" class="rounded-3 btnhover" data-bs-toggle="tooltip"
-                                title="H code verwijderen" hidden>-</button>
-                            <button id="hPlusBtn" type="button" class="rounded-3 btnhover" data-bs-toggle="tooltip"
-                                title="H code toevoegen">+</button>
-                        </div>
-                    </div>
-                    <div id="manHphraseInput" class="row row-cols-12 mx-1 mb-3">
-                        <div class="col-12 col-sm-6 col-md-4 mb-3">
-                            <input class="form-control px-2" list="hDatalistOptions" placeholder="H123"
-                                pattern="((H[2-4]{1}\d{2}\s*\+\s*){0,2}(H[2-4]{1}\d{2}))" minlength="4" maxlength="14">
-                            <datalist id="hDatalistOptions">
-                            </datalist>
-                            <div class="valid-feedback">
-                                Lijkt ok&hellip;
+                        <div class="row row-cols-12 mx-1 mb-3">
+                            <div class="col-6">
+                                <span class="h4">P zin(nen):</span>
                             </div>
-                            <div class="invalid-feedback">
+                            <div class="col-6 text-end">
+                                <button id="pMinusBtn" type="button" class="rounded-3 btnhover" data-bs-toggle="tooltip"
+                                    title="P code verwijderen" hidden>-</button>
+                                <button id="pPlusBtn" type="button" class="rounded-3 btnhover" data-bs-toggle="tooltip"
+                                    title="P code toevoegen">+</button>
+                            </div>
+                        </div>
+                        <div id="manPphraseInput" class="row row-cols-12 mx-1 mb-3">
+                            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                                <input class="form-control px-2" list="pDatalistOptions" placeholder="P123"
+                                    pattern="((P[1-5]{1}\d{2}\s*\+\s*){0,2}(P[1-5]{1}\d{2}[AB]?))" minlength="4"
+                                    maxlength="14">
+                                <datalist id="pDatalistOptions">
+                                </datalist>
+                                <div class="valid-feedback">
+                                    Lijkt ok&hellip;
+                                </div>
+                                <div class="invalid-feedback">
+                                    Onjuiste P code&hellip;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-12 mx-1 my-3">
+                            <div class="container-fluid text-end">
+                                <button id="submitManualSearch" type="submit" class="rounded-3 btnhover"
+                                    data-bs-toggle="tooltip" title="Maak raport">Check</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="divCompounds">
 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row row-cols-12 mx-1 mb-3">
-                        <div class="col-6">
-                            <span class="h4">P zin(nen):</span>
-                        </div>
-                        <div class="col-6 text-end">
-                            <button id="pMinusBtn" type="button" class="rounded-3 btnhover" data-bs-toggle="tooltip"
-                                title="P code verwijderen" hidden>-</button>
-                            <button id="pPlusBtn" type="button" class="rounded-3 btnhover" data-bs-toggle="tooltip"
-                                title="P code toevoegen">+</button>
-                        </div>
-                    </div>
-                    <div id="manPphraseInput" class="row row-cols-12 mx-1 mb-3">
-                        <div class="col-12 col-sm-6 col-md-4 mb-3">
-                            <input class="form-control px-2" list="pDatalistOptions" placeholder="P123"
-                                pattern="((P[1-5]{1}\d{2}\s*\+\s*){0,2}(P[1-5]{1}\d{2}[AB]?))" minlength="4"
-                                maxlength="14">
-                            <datalist id="pDatalistOptions">
-                            </datalist>
-                            <div class="valid-feedback">
-                                Lijkt ok&hellip;
-                            </div>
-                            <div class="invalid-feedback">
-                                Onjuiste P code&hellip;
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-cols-12 mx-1 my-3">
-                        <div class="container-fluid text-end">
-                            <button id="submitManualSearch" type="submit" class="rounded-3 btnhover"
-                                data-bs-toggle="tooltip" title="Maak raport">Check</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
-        <div id="divCompounds">
-
+    </main>
+    <footer class="d-print-none">
+        <div class="row">
+            <div class="col-md text-center mb-1">
+                <small>CPC Version 2.1</small>
+            </div>
+            <div class="col-md text-center mb-1">
+                <small>&copy; Karel Planken 2025
+                    <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL-3.0 License</a>
+                </small>
+            </div>
         </div>
-    </div>
+    </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">

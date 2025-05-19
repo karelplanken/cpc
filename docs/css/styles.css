@@ -3,6 +3,11 @@ html {
     background-color: #cccccc;
 } */
 
+body {
+    overflow-x: hidden;
+}
+
+
 @media screen and (min-width: 900px) {
     html {
         /* margin-left: calc(100vw - 100%); */
