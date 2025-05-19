@@ -5,7 +5,6 @@
     Therefore this is part of the Controller but also is the View. The Model is contained in 
     the data processing and library scripts, see below.
 -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +38,35 @@
     <script src="js/forbiddenHcodesArray.js"></script>
     <script src="js/toleratedSZWcasrnsArray.js"></script>
     <script src="js/toleratedHcasrnsArray.js"></script>
+    <script>
+        // nl
+        // en
+        // en-US
+        window.addEventListener('load', () => {
+            let dropdown = document.querySelector('.language-selector.dropdown');
+            dropdown.querySelectorAll('.dropdown-item').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Update button content
+                    const button = document.getElementById('languageDropdown');
+                    button.innerHTML = this.innerHTML;
+
+                    // Update active class
+                    document.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    localStorage.setItem('selectedLanguage', this.dataset.language);
+
+                    console.log(localStorage.getItem('selectedLanguage'));
+                    // Optional: trigger language change logic here
+                    // e.g., save to localStorage or call a backend endpoint
+                })
+            });
+        });
+    </script>
     <title>CompoundPolicyCheck</title>
 </head>
-
 <body class="d-flex flex-column min-vh-100">
     <main class="flex-grow-1">
         <div class="col-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
@@ -80,7 +105,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="col-12 px-0">
                     <div class="accordion my-3" id="accordionExplanation">
