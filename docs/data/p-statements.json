@@ -1,0 +1,790 @@
+{
+  "$schema": "./schemas/p-statements.schema.json",
+  "meta": {
+    "description": "GHS/CLP precautionary (P) statements with statement texts per language.",
+    "source": "https://nl.wikipedia.org/wiki/Lijst_van_H-_en_P-zinnen",
+    "updatedAt": "2025-01-02"
+  },
+  "statements": {
+    "P101": {
+      "statement": {
+        "en": "If medical advice is needed, have product container or label at hand.",
+        "nl": "Bij het inwinnen van medisch advies, de verpakking of het etiket ter beschikking houden."
+      }
+    },
+    "P102": {
+      "statement": {
+        "en": "Keep out of reach of children.",
+        "nl": "Buiten het bereik van kinderen houden."
+      }
+    },
+    "P103": {
+      "statement": {
+        "en": "Read label before use.",
+        "nl": "Alvorens te gebruiken, het etiket lezen."
+      }
+    },
+    "P201": {
+      "statement": {
+        "en": "Obtain special instructions before use.",
+        "nl": "Alvorens te gebruiken, de speciale aanwijzingen raadplegen."
+      }
+    },
+    "P202": {
+      "statement": {
+        "en": "Do not handle until all safety precautions have been read and understood.",
+        "nl": "Pas gebruiken nadat u alle veiligheidsvoorschriften gelezen en begrepen heeft."
+      }
+    },
+    "P210": {
+      "statement": {
+        "en": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking.",
+        "nl": "Verwijderd houden van warmte/vonken/open vuur/hete oppervlakken en andere ontstekingsbronnen. - Niet roken."
+      }
+    },
+    "P211": {
+      "statement": {
+        "en": "Do not spray on an open flame or other ignition source.",
+        "nl": "Niet in een open vuur of op andere ontstekingsbronnen spuiten."
+      }
+    },
+    "P220": {
+      "statement": {
+        "en": "Keep/store away from clothing/.../combustible materials.",
+        "nl": "Van kleding/.../brandbare stoffen verwijderd houden/bewaren."
+      }
+    },
+    "P221": {
+      "statement": {
+        "en": "Take any precaution to avoid mixing with combustibles...",
+        "nl": "Vermenging met brandbare stoffen... absoluut vermijden."
+      }
+    },
+    "P222": {
+      "statement": {
+        "en": "Do not allow contact with air.",
+        "nl": "Contact met de lucht vermijden."
+      }
+    },
+    "P230": {
+      "statement": {
+        "en": "Keep wetted with...",
+        "nl": "Vochtig houden met..."
+      }
+    },
+    "P231": {
+      "statement": {
+        "en": "Handle under inert gas.",
+        "nl": "Onder inert gas werken."
+      }
+    },
+    "P232": {
+      "statement": {
+        "en": "Protect from moisture.",
+        "nl": "Tegen vocht beschermen."
+      }
+    },
+    "P233": {
+      "statement": {
+        "en": "Keep container tightly closed.",
+        "nl": "In goed gesloten verpakking bewaren."
+      }
+    },
+    "P234": {
+      "statement": {
+        "en": "Keep only in original container.",
+        "nl": "Uitsluitend in de oorspronkelijke verpakking bewaren."
+      }
+    },
+    "P235": {
+      "statement": {
+        "en": "Keep cool.",
+        "nl": "Koel bewaren."
+      }
+    },
+    "P240": {
+      "statement": {
+        "en": "Ground/bond container and receiving equipment.",
+        "nl": "Opslag- en opvangreservoir aarden."
+      }
+    },
+    "P241": {
+      "statement": {
+        "en": "Use explosion-proof electrical/ventilating/lighting/... equipment.",
+        "nl": "Explosieveilige elektrische/ventilatie-/verlichtings-/...apparatuur gebruiken."
+      }
+    },
+    "P242": {
+      "statement": {
+        "en": "Use only non-sparking tools.",
+        "nl": "Uitsluitend vonkvrij gereedschap gebruiken."
+      }
+    },
+    "P243": {
+      "statement": {
+        "en": "Take precautionary measures against static discharge.",
+        "nl": "Voorzorgsmaatregelen treffen tegen ontladingen van statische elektriciteit."
+      }
+    },
+    "P244": {
+      "statement": {
+        "en": "Keep valves and fittings free from oil and grease.",
+        "nl": "Houd afsluiters en fittingen vrij van olie en vet."
+      }
+    },
+    "P250": {
+      "statement": {
+        "en": "Do not subject to grinding/shock/.../friction.",
+        "nl": "Malen/schokken/...wrijving vermijden."
+      }
+    },
+    "P251": {
+      "statement": {
+        "en": "Do not pierce or burn, even after use.",
+        "nl": "Ook na gebruik niet doorboren of verbranden."
+      }
+    },
+    "P260": {
+      "statement": {
+        "en": "Do not breathe dust/fume/gas/mist/vapors/spray.",
+        "nl": "Stof/rook/gas/nevel/damp/spuitnevel niet inademen."
+      }
+    },
+    "P261": {
+      "statement": {
+        "en": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
+        "nl": "Inademing van stof/rook/gas/nevel/damp/spuitnevel vermijden."
+      }
+    },
+    "P262": {
+      "statement": {
+        "en": "Do not get in eyes, on skin, or on clothing.",
+        "nl": "Contact met de ogen, de huid of de kleding vermijden."
+      }
+    },
+    "P263": {
+      "statement": {
+        "en": "Avoid contact during pregnancy/while nursing.",
+        "nl": "Bij zwangerschap of borstvoeding aanraking vermijden."
+      }
+    },
+    "P264": {
+      "statement": {
+        "en": "Wash ... thoroughly after handling.",
+        "nl": "Na het werken met dit product ... grondig wassen."
+      }
+    },
+    "P270": {
+      "statement": {
+        "en": "Do not eat, drink or smoke when using this product.",
+        "nl": "Niet eten, drinken of roken tijdens het gebruik van dit product."
+      }
+    },
+    "P271": {
+      "statement": {
+        "en": "Use only outdoors or in a well-ventilated area.",
+        "nl": "Alleen buiten of in een goed geventileerde ruimte gebruiken."
+      }
+    },
+    "P272": {
+      "statement": {
+        "en": "Contaminated work clothing should not be allowed out of the workplace.",
+        "nl": "Verontreinigde werkkleding mag de werkruimte niet verlaten."
+      }
+    },
+    "P273": {
+      "statement": {
+        "en": "Avoid release to the environment.",
+        "nl": "Voorkom lozing in het milieu."
+      }
+    },
+    "P280": {
+      "statement": {
+        "en": "Wear protective gloves/protective clothing/eye protection/face protection.",
+        "nl": "Beschermende kledij dragen."
+      }
+    },
+    "P281": {
+      "statement": {
+        "en": "Use personal protective equipment as required.",
+        "nl": "De nodige persoonlijke beschermingsuitrusting gebruiken."
+      }
+    },
+    "P282": {
+      "statement": {
+        "en": "Wear cold insulating gloves/face shield/eye protection.",
+        "nl": "Koude-isolerende handschoenen/gelaatsbescherming/oogbescherming dragen."
+      }
+    },
+    "P283": {
+      "statement": {
+        "en": "Wear fire/flame resistant/retardant clothing.",
+        "nl": "Vuur/vlambestendige/brandwerende kleding dragen."
+      }
+    },
+    "P284": {
+      "statement": {
+        "en": "[In case of inadequate ventilation] wear respiratory protection.",
+        "nl": "[Bij ontoereikende ventilatie] adembescherming dragen."
+      }
+    },
+    "P231+P232": {
+      "statement": {
+        "en": "Handle under inert gas. Protect from moisture.",
+        "nl": "Onder inert gas werken. Tegen vocht beschermen."
+      }
+    },
+    "P235+P410": {
+      "statement": {
+        "en": "Keep cool. Protect from sunlight.",
+        "nl": "Koel bewaren. Tegen zonlicht beschermen."
+      }
+    },
+    "P301": {
+      "statement": {
+        "en": "IF SWALLOWED:",
+        "nl": "NA INSLIKKEN: → onmiddellijk het antigifcentrum of een arts raadplegen."
+      }
+    },
+    "P302": {
+      "statement": {
+        "en": "IF ON SKIN:",
+        "nl": "BIJ CONTACT MET DE HUID:"
+      }
+    },
+    "P303": {
+      "statement": {
+        "en": "IF ON SKIN (or hair):",
+        "nl": "BIJ CONTACT MET DE HUID (of het haar):"
+      }
+    },
+    "P304": {
+      "statement": {
+        "en": "IF INHALED:",
+        "nl": "NA INADEMING:"
+      }
+    },
+    "P305": {
+      "statement": {
+        "en": "IF IN EYES:",
+        "nl": "BIJ CONTACT MET DE OGEN: → onmiddellijk zachtjes afspoelen met water."
+      }
+    },
+    "P306": {
+      "statement": {
+        "en": "IF ON CLOTHING:",
+        "nl": "NA MORSEN OP KLEDING: → Zo snel mogelijk de kledij uitdoen."
+      }
+    },
+    "P308": {
+      "statement": {
+        "en": "IF exposed or concerned:",
+        "nl": "NA (mogelijke) blootstelling:"
+      }
+    },
+    "P310": {
+      "statement": {
+        "en": "Immediately call a POISON CENTER/doctor/...",
+        "nl": "Onmiddellijk een ANTIGIFCENTRUM/arts/... raadplegen."
+      }
+    },
+    "P311": {
+      "statement": {
+        "en": "Call a POISON CENTER/doctor/...",
+        "nl": "Een ANTIGIFCENTRUM/arts/... raadplegen."
+      }
+    },
+    "P312": {
+      "statement": {
+        "en": "Call a POISON CENTER/doctor/... if you feel unwell.",
+        "nl": "Bij onwel voelen een ANTIGIFCENTRUM/arts/... raadplegen."
+      }
+    },
+    "P313": {
+      "statement": {
+        "en": "Get medical advice/attention.",
+        "nl": "Een arts raadplegen."
+      }
+    },
+    "P314": {
+      "statement": {
+        "en": "Get medical advice/attention if you feel unwell.",
+        "nl": "Bij onwel voelen een arts raadplegen."
+      }
+    },
+    "P315": {
+      "statement": {
+        "en": "Get immediate medical advice/attention.",
+        "nl": "Onmiddellijk een arts raadplegen."
+      }
+    },
+    "P320": {
+      "statement": {
+        "en": "Specific treatment is urgent (see ... on this label).",
+        "nl": "Specifieke behandeling dringend vereist (zie ... op dit etiket)."
+      }
+    },
+    "P321": {
+      "statement": {
+        "en": "Specific treatment (see ... on this label).",
+        "nl": "Specifieke behandeling vereist (zie ... op dit etiket)."
+      }
+    },
+    "P330": {
+      "statement": {
+        "en": "Rinse mouth.",
+        "nl": "De mond spoelen."
+      }
+    },
+    "P331": {
+      "statement": {
+        "en": "Do NOT induce vomiting.",
+        "nl": "GEEN braken opwekken."
+      }
+    },
+    "P332": {
+      "statement": {
+        "en": "If skin irritation occurs:",
+        "nl": "Bij huidirritatie:"
+      }
+    },
+    "P333": {
+      "statement": {
+        "en": "If skin irritation or rash occurs:",
+        "nl": "Bij huidirritatie of uitslag:"
+      }
+    },
+    "P334": {
+      "statement": {
+        "en": "Immerse in cool water/wrap in wet bandages.",
+        "nl": "In koud water onderdompelen/nat verband aanbrengen."
+      }
+    },
+    "P335": {
+      "statement": {
+        "en": "Brush off loose particles from skin.",
+        "nl": "Losse deeltjes van de huid afvegen."
+      }
+    },
+    "P336": {
+      "statement": {
+        "en": "Thaw frosted parts with lukewarm water. Do not rub affected area.",
+        "nl": "Bevroren lichaamsdelen met lauw water ontdooien. Niet wrijven op de betrokken plaatsen."
+      }
+    },
+    "P337": {
+      "statement": {
+        "en": "If eye irritation persists:",
+        "nl": "Bij aanhoudende oogirritatie:"
+      }
+    },
+    "P338": {
+      "statement": {
+        "en": "Remove contact lenses, if present and easy to do. Continue rinsing.",
+        "nl": "Contactlenzen verwijderen, indien mogelijk. Blijven spoelen."
+      }
+    },
+    "P340": {
+      "statement": {
+        "en": "Remove person to fresh air and keep comfortable for breathing.",
+        "nl": "De persoon in de frisse lucht brengen en ervoor zorgen dat deze gemakkelijk kan ademen."
+      }
+    },
+    "P342": {
+      "statement": {
+        "en": "If experiencing respiratory symptoms:",
+        "nl": "Bij ademhalingssymptomen:"
+      }
+    },
+    "P350": {
+      "statement": {
+        "en": "Gently wash with plenty of soap and water.",
+        "nl": "voorzichtig wassen met veel water en zeep."
+      }
+    },
+    "P351": {
+      "statement": {
+        "en": "Rinse cautiously with water for several minutes.",
+        "nl": "Voorzichtig afspoelen met water gedurende een aantal minuten."
+      }
+    },
+    "P352": {
+      "statement": {
+        "en": "Wash with plenty of soap and water.",
+        "nl": "Met veel water en zeep wassen."
+      }
+    },
+    "P353": {
+      "statement": {
+        "en": "Rinse skin with water/shower.",
+        "nl": "Huid met water afspoelen/afdouchen."
+      }
+    },
+    "P360": {
+      "statement": {
+        "en": "Rinse immediately contaminated clothing and skin with plenty of water before removing clothes.",
+        "nl": "Verontreinigde kleding en huid onmiddellijk met veel water afspoelen en pas daarna kleding uittrekken."
+      }
+    },
+    "P361": {
+      "statement": {
+        "en": "Take off immediately all contaminated clothing.",
+        "nl": "Verontreinigde kleding onmiddellijk uittrekken."
+      }
+    },
+    "P362": {
+      "statement": {
+        "en": "Take off contaminated clothing.",
+        "nl": "Verontreinigde kleding uittrekken."
+      }
+    },
+    "P363": {
+      "statement": {
+        "en": "Wash contaminated clothing before reuse.",
+        "nl": "Verontreinigde kleding wassen alvorens deze opnieuw te gebruiken."
+      }
+    },
+    "P370": {
+      "statement": {
+        "en": "In case of fire:",
+        "nl": "In geval van brand:"
+      }
+    },
+    "P371": {
+      "statement": {
+        "en": "In case of major fire and large quantities:",
+        "nl": "In geval van grote brand en grote hoeveelheden:"
+      }
+    },
+    "P372": {
+      "statement": {
+        "en": "Explosion risk in case of fire.",
+        "nl": "Ontploffingsgevaar in geval van brand."
+      }
+    },
+    "P373": {
+      "statement": {
+        "en": "DO NOT fight fire when fire reaches explosives.",
+        "nl": "NIET blussen wanneer het vuur de ontplofbare stoffen bereikt."
+      }
+    },
+    "P374": {
+      "statement": {
+        "en": "Fight fire with normal precautions from a reasonable distance.",
+        "nl": "Met normale voorzorgen vanaf een redelijke afstand blussen."
+      }
+    },
+    "P375": {
+      "statement": {
+        "en": "Fight fire remotely due to the risk of explosion.",
+        "nl": "Op afstand blussen omwille van ontploffingsgevaar."
+      }
+    },
+    "P376": {
+      "statement": {
+        "en": "Stop leak if safe to do so.",
+        "nl": "Het lek dichten als dat veilig gedaan kan worden."
+      }
+    },
+    "P377": {
+      "statement": {
+        "en": "Leaking gas fire: do not extinguish, unless leak can be stopped safely.",
+        "nl": "Brand door lekkend gas: niet blussen, tenzij het lek veilig gedicht kan worden."
+      }
+    },
+    "P378": {
+      "statement": {
+        "en": "Use ... to extinguish.",
+        "nl": "Blussen met..."
+      }
+    },
+    "P380": {
+      "statement": {
+        "en": "Evacuate area.",
+        "nl": "Evacueren."
+      }
+    },
+    "P381": {
+      "statement": {
+        "en": "Eliminate all ignition sources if safe to do so.",
+        "nl": "Alle ontstekingsbronnen wegnemen als dat veilig gedaan kan worden."
+      }
+    },
+    "P390": {
+      "statement": {
+        "en": "Absorb spillage to prevent material damage.",
+        "nl": "Gelekte/gemorste stof opnemen om materiële schade te vermijden."
+      }
+    },
+    "P391": {
+      "statement": {
+        "en": "Collect spillage.",
+        "nl": "Gelekte/gemorste stof opruimen."
+      }
+    },
+    "P301+P310": {
+      "statement": {
+        "en": "IF SWALLOWED: immediately call a POISON CENTER/doctor/...",
+        "nl": "NA INSLIKKEN: onmiddellijk een ANTIGIFCENTRUM/arts/... raadplegen."
+      }
+    },
+    "P301+P312": {
+      "statement": {
+        "en": "IF SWALLOWED: call a POISON CENTER/doctor/... if you feel unwell.",
+        "nl": "NA INSLIKKEN: bij onwel voelen een ANTIGIFCENTRUM/arts/... raadplegen."
+      }
+    },
+    "P301+P330+P331": {
+      "statement": {
+        "en": "IF SWALLOWED: rinse mouth. Do NOT induce vomiting.",
+        "nl": "NA INSLIKKEN: de mond spoelen -- GEEN braken opwekken."
+      }
+    },
+    "P302+P334": {
+      "statement": {
+        "en": "IF ON SKIN: immerse in cool water/wrap in wet bandages.",
+        "nl": "BIJ CONTACT MET DE HUID: in koud water onderdompelen/nat verband aanbrengen."
+      }
+    },
+    "P302+P352": {
+      "statement": {
+        "en": "IF ON SKIN: wash with plenty of soap and water.",
+        "nl": "BIJ CONTACT MET DE HUID: met veel water en zeep wassen."
+      }
+    },
+    "P303+P361+P353": {
+      "statement": {
+        "en": "IF ON SKIN (or hair): take off immediately all contaminated clothing. Rinse skin with water/shower.",
+        "nl": "BIJ CONTACT MET DE HUID (of het haar): verontreinigde kleding onmiddellijk uittrekken. Huid met water afspoelen/afdouchen."
+      }
+    },
+    "P304+P340": {
+      "statement": {
+        "en": "IF INHALED: remove person to fresh air and keep comfortable for breathing.",
+        "nl": "NA INADEMING: de persoon in de frisse lucht brengen en ervoor zorgen dat deze gemakkelijk kan ademen."
+      }
+    },
+    "P305+P351+P338": {
+      "statement": {
+        "en": "IF IN EYES: rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to do. Continue rinsing.",
+        "nl": "BIJ CONTACT MET DE OGEN: voorzichtig afspoelen met water gedurende een aantal minuten; contactlenzen verwijderen, indien mogelijk; blijven spoelen."
+      }
+    },
+    "P306+P360": {
+      "statement": {
+        "en": "IF ON CLOTHING: rinse immediately contaminated clothing and skin with plenty of water before removing clothes.",
+        "nl": "NA MORSEN OP KLEDING: verontreinigde kleding en huid onmiddellijk met veel water afspoelen en pas daarna kleding uittrekken."
+      }
+    },
+    "P308+P311": {
+      "statement": {
+        "en": "IF exposed or concerned: call a POISON CENTER/doctor/...",
+        "nl": "NA (mogelijke) blootstelling: een ANTIGIFCENTRUM/arts/... raadplegen."
+      }
+    },
+    "P308+P313": {
+      "statement": {
+        "en": "IF exposed or concerned: get medical advice/attention.",
+        "nl": "NA (mogelijke) blootstelling: een arts raadplegen."
+      }
+    },
+    "P332+P313": {
+      "statement": {
+        "en": "If skin irritation occurs: get medical advice/attention.",
+        "nl": "Bij huidirritatie: een arts raadplegen."
+      }
+    },
+    "P333+P313": {
+      "statement": {
+        "en": "If skin irritation or rash occurs: get medical advice/attention.",
+        "nl": "Bij huidirritatie of uitslag: een arts raadplegen."
+      }
+    },
+    "P335+P334": {
+      "statement": {
+        "en": "Brush off loose particles from skin. Immerse in cool water/wrap in wet bandages.",
+        "nl": "Losse deeltjes van de huid afvegen. In koud water onderdompelen/nat verband aanbrengen."
+      }
+    },
+    "P337+P313": {
+      "statement": {
+        "en": "If eye irritation persists: get medical advice/attention.",
+        "nl": "Bij aanhoudende oogirritatie: een arts raadplegen."
+      }
+    },
+    "P342+P311": {
+      "statement": {
+        "en": "If experiencing respiratory symptoms: call a POISON CENTER/doctor/...",
+        "nl": "Bij ademhalingssymptomen: een ANTIGIFCENTRUM/arts/... raadplegen."
+      }
+    },
+    "P361+P364": {
+      "statement": {
+        "en": "Take off immediately all contaminated clothing and wash it before reuse.",
+        "nl": "Verontreinigde kleding onmiddellijk uittrekken en wassen alvorens deze opnieuw te gebruiken."
+      }
+    },
+    "P362+P364": {
+      "statement": {
+        "en": "Take off contaminated clothing and wash it before reuse.",
+        "nl": "Verontreinigde kleding uittrekken en wassen alvorens deze opnieuw te gebruiken."
+      }
+    },
+    "P370+P376": {
+      "statement": {
+        "en": "In case of fire: stop leak if safe to do so.",
+        "nl": "In geval van brand: het lek dichten als dat veilig gedaan kan worden."
+      }
+    },
+    "P370+P378": {
+      "statement": {
+        "en": "In case of fire: use ... to extinguish.",
+        "nl": "In geval van brand: blussen met..."
+      }
+    },
+    "P370+P380": {
+      "statement": {
+        "en": "In case of fire: evacuate area.",
+        "nl": "In geval van brand: evacueren."
+      }
+    },
+    "P370+P380+P375": {
+      "statement": {
+        "en": "In case of fire: evacuate area. Fight fire remotely due to the risk of explosion.",
+        "nl": "In geval van brand: evacueren. Op afstand blussen omwille van ontploffingsgevaar."
+      }
+    },
+    "P371+P380+P375": {
+      "statement": {
+        "en": "In case of major fire and large quantities: evacuate area. Fight fire remotely due to the risk of explosion.",
+        "nl": "In geval van grote brand en grote hoeveelheden: evacueren. Op afstand blussen omwille van ontploffingsgevaar."
+      }
+    },
+    "P401": {
+      "statement": {
+        "en": "Store ...",
+        "nl": "... bewaren."
+      }
+    },
+    "P402": {
+      "statement": {
+        "en": "Store in a dry place.",
+        "nl": "Op een droge plaats bewaren."
+      }
+    },
+    "P403": {
+      "statement": {
+        "en": "Store in a well-ventilated place.",
+        "nl": "Op een goed geventileerde plaats bewaren."
+      }
+    },
+    "P404": {
+      "statement": {
+        "en": "Store in a closed container.",
+        "nl": "In gesloten verpakking bewaren."
+      }
+    },
+    "P405": {
+      "statement": {
+        "en": "Store locked up.",
+        "nl": "Achter slot bewaren."
+      }
+    },
+    "P406": {
+      "statement": {
+        "en": "Store in a corrosion-resistant/... container with a resistant inner liner.",
+        "nl": "In corrosiebestendige/... houder met corrosiebestendige binnenbekleding bewaren."
+      }
+    },
+    "P407": {
+      "statement": {
+        "en": "Maintain air gap between stacks/pallets.",
+        "nl": "Ruimte laten tussen stapels/pallets."
+      }
+    },
+    "P410": {
+      "statement": {
+        "en": "Protect from sunlight.",
+        "nl": "Tegen zonlicht beschermen."
+      }
+    },
+    "P411": {
+      "statement": {
+        "en": "Store at temperatures not exceeding ... °C/... °F.",
+        "nl": "Bij maximaal ... °C/... °F bewaren."
+      }
+    },
+    "P412": {
+      "statement": {
+        "en": "Do not expose to temperatures exceeding 50 °C/122 °F.",
+        "nl": "Niet blootstellen aan temperaturen boven 50 °C/122 °F."
+      }
+    },
+    "P413": {
+      "statement": {
+        "en": "Store bulk masses greater than ... kg/... lbs at temperatures not exceeding ... °C/... °F.",
+        "nl": "Bulkmateriaal, indien meer dan ... kg/... lbs, bij temperaturen van maximaal ...°C/... °F bewaren."
+      }
+    },
+    "P420": {
+      "statement": {
+        "en": "Store away from other materials.",
+        "nl": "Gescheiden van ander materiaal bewaren."
+      }
+    },
+    "P422": {
+      "statement": {
+        "en": "Store contents under ...",
+        "nl": "Onder ... bewaren."
+      }
+    },
+    "P402+P404": {
+      "statement": {
+        "en": "Store in a dry place. Store in a closed container.",
+        "nl": "Op een droge plaats bewaren. In gesloten verpakking bewaren."
+      }
+    },
+    "P403+P233": {
+      "statement": {
+        "en": "Store in a well-ventilated place. Keep container tightly closed.",
+        "nl": "Op een goed geventileerde plaats bewaren. In goed gesloten verpakking bewaren."
+      }
+    },
+    "P403+P235": {
+      "statement": {
+        "en": "Store in a well-ventilated place. Keep cool.",
+        "nl": "Op een goed geventileerde plaats bewaren. Koel bewaren."
+      }
+    },
+    "P410+P403": {
+      "statement": {
+        "en": "Protect from sunlight. Store in a well-ventilated place.",
+        "nl": "Tegen zonlicht beschermen. Op een goed geventileerde plaats bewaren."
+      }
+    },
+    "P410+P412": {
+      "statement": {
+        "en": "Protect from sunlight. Do not expose to temperatures exceeding 50 °C/122 °F.",
+        "nl": "Tegen zonlicht beschermen. Niet blootstellen aan temperaturen boven 50 °C/122 °F."
+      }
+    },
+    "P411+P235": {
+      "statement": {
+        "en": "Store at temperatures not exceeding ... °C/... °F. Keep cool.",
+        "nl": "Bij maximaal ... °C/... °F bewaren. Koel bewaren."
+      }
+    },
+    "P501A": {
+      "statement": {
+        "en": "Dispose of contents/container to a certified waste treatment facility.",
+        "nl": "Inhoud/verpakking afvoeren naar gecertificeerde verwerker van afvalstromen."
+      }
+    },
+    "P501B": {
+      "statement": {
+        "en": "Dispose of contents/container in accordance with local regulations.",
+        "nl": "Inhoud/verpakking afvoeren volgens plaatselijke voorschriften."
+      }
+    }
+  }
+}

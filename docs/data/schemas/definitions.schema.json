@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "definitions.schema.json",
+  "title": "Shared definitions for the Compound Policy Check data files",
+  "$defs": {
+    "casrn": {
+      "description": "CAS Registry Number. The check digit is verified separately.",
+      "type": "string",
+      "pattern": "^\\d{2,8}-\\d{2}-\\d$"
+    },
+    "singleHCode": {
+      "type": "string",
+      "pattern": "^H[2-4]\\d{2}$"
+    },
+    "hCode": {
+      "description": "A single H code or a combination such as H302+H312.",
+      "type": "string",
+      "pattern": "^H[2-4]\\d{2}(\\+H[2-4]\\d{2})*$"
+    },
+    "pCode": {
+      "description": "A single P code or a combination such as P305+P351+P338.",
+      "type": "string",
+      "pattern": "^P[1-5]\\d{2}[AB]?(\\+P[1-5]\\d{2}[AB]?)*$"
+    },
+    "pictogram": {
+      "description": "GHS pictogram code; a file with this name must exist in docs/assets/pictograms.",
+      "enum": ["GHS01", "GHS02", "GHS03", "GHS04", "GHS05", "GHS06", "GHS07", "GHS08", "GHS09"]
+    },
+    "localizedText": {
+      "description": "A text in every supported language.",
+      "type": "object",
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "nl": { "type": "string", "minLength": 1 }
+      },
+      "required": ["en", "nl"],
+      "additionalProperties": false
+    },
+    "meta": {
+      "description": "Where the data comes from and how current it is.",
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "source": { "type": "string" },
+        "updatedAt": {
+          "description": "Date of the last update, as YYYY-MM-DD.",
+          "type": "string",
+          "format": "date"
+        },
+        "publishedAt": {
+          "description": "Local date and time of publication of the source, as YYYY-MM-DDTHH:mm.",
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}$"
+        }
+      },
+      "required": ["description", "source"],
+      "additionalProperties": false
+    }
+  }
+}

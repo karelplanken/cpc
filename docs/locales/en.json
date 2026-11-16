@@ -1,0 +1,153 @@
+{
+  "app": {
+    "title": "Compound Policy Check",
+    "loadError": "The app could not be loaded. Check your connection and reload the page."
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "nl": "Nederlands"
+  },
+  "info": {
+    "notice": {
+      "title": "Please note",
+      "body": "<strong class=\"text-danger\">Please note:</strong> use the latest version of Firefox or Chrome; other browsers have not been tested. In other browsers the app may behave differently or give odd and possibly unreliable results."
+    },
+    "explanation": {
+      "title": "Explanation",
+      "intro": "<strong class=\"text-success\">Explanation:</strong> this app helps you check whether a substance is forbidden in <strong>the laboratory</strong>. A substance here means either a pure substance, i.e. one <abbr data-bs-toggle=\"tooltip\" title=\"Chemical Abstracts Service Registry Number\">CAS RN</abbr>, or a mixture, i.e. several CAS RNs. Note that a substance that is not forbidden is not necessarily allowed, because that depends on more factors. You can check a substance with one of two input methods: a file or manual input.",
+      "file": "For file input you need an <abbr data-bs-toggle=\"tooltip\" title=\"Safety Data Sheet\">SDS</abbr> as a <abbr data-bs-toggle=\"tooltip\" title=\"Portable Document Format\">PDF</abbr> that contains text, so not a scanned image. Preferably use an SDS from Sigma-Aldrich; these turn out to be more complete than others. If you have trouble finding an SDS, try this <a href=\"https://chemicalsafety.com/sds-search/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Safety Data Sheet Search</a> app. <strong>Please note:</strong> the SDS must contain at least one valid CAS RN or H code (H statements written out in full are not detected). Manual input requires at least one CAS RN or H code; P codes are optional.",
+      "reports": "Each report gives a verdict on whether one substance is forbidden. If you enter several substances at once and the verdict is <em>forbidden</em>, you cannot tell afterwards which of the substances caused it. You can stack reports: after creating one, select an input method again to create the next. Each report can be removed with its own button. Reloading the page removes all input and reports and gives you a clean slate."
+    },
+    "legend": {
+      "title": "Legend",
+      "cat0": {
+        "term": "Cat 0:",
+        "description": "Not allowed, because the substance has a forbidden H code and/or is on the list of forbidden CAS RNs."
+      },
+      "cat1": {
+        "term": "Cat 1:",
+        "description": "Temporarily allowed. Substances in this category cannot be looked up with this app (yet)."
+      },
+      "cat2": {
+        "term": "Cat 2:",
+        "description": "The substance has a forbidden H code and/or CAS RN, but is on the list of explicitly allowed substances because it is essential for lab courses, for teaching or research projects, or is used \"frequently\". Such a substance is tolerated."
+      },
+      "cat3": {
+        "term": "Cat 3:",
+        "description": "Not forbidden, because the substance has no forbidden H code and is not on the list of forbidden CAS RNs."
+      }
+    }
+  },
+  "input": {
+    "heading": "Select input method:",
+    "file": "SDS PDF file",
+    "manual": "Manual input"
+  },
+  "form": {
+    "valid": "Looks OK…"
+  },
+  "fileForm": {
+    "heading": "File:",
+    "selectTooltip": "Select a file",
+    "submit": "Check SDS",
+    "submitTooltip": "Create report",
+    "error": {
+      "noFile": "Select a file…",
+      "notPdf": "This is not a PDF…",
+      "noText": "No text in this PDF…",
+      "noIdentifiers": "No valid CAS RN or H code found in this PDF…",
+      "unreadable": "This PDF could not be read…"
+    }
+  },
+  "manualForm": {
+    "submit": "Check",
+    "submitTooltip": "Create report",
+    "casrn": {
+      "heading": "CAS RN(s):",
+      "inputLabel": "CAS RN",
+      "add": "Add CAS RN",
+      "remove": "Remove CAS RN",
+      "invalid": "Invalid CAS RN…",
+      "required": "Required if H code is empty…"
+    },
+    "hCode": {
+      "heading": "H code(s):",
+      "inputLabel": "H code",
+      "add": "Add H code",
+      "remove": "Remove H code",
+      "invalid": "Invalid H code…",
+      "required": "Required if CAS RN is empty…"
+    },
+    "pCode": {
+      "heading": "P code(s):",
+      "inputLabel": "P code",
+      "add": "Add P code",
+      "remove": "Remove P code",
+      "invalid": "Invalid P code…"
+    }
+  },
+  "report": {
+    "input": "Input:",
+    "source": {
+      "manual": "manual"
+    },
+    "szwList": "SZW list of {date}",
+    "remove": "Remove",
+    "casrn": {
+      "heading": "CAS number(s):",
+      "none": "No CAS RN found.",
+      "status": {
+        "szwTolerated": "CAS RN is on the SZW list but is not forbidden, because it is a Cat. 2 substance.",
+        "szwListed": "Forbidden based on CAS RN, because it is on the SZW list.",
+        "hTolerated": "CAS RN has a forbidden H code but is tolerated, because it is a Cat. 2 substance.",
+        "notListed": "Not forbidden based on CAS RN, because it is not on the SZW list."
+      },
+      "registrationNoteLabel": "Please note:",
+      "registrationNote": "exposure must be registered!"
+    },
+    "hCode": {
+      "heading": "H statement(s):",
+      "none": "No H code found."
+    },
+    "pCode": {
+      "heading": "P statement(s):",
+      "none": "No P code found."
+    },
+    "verdict": {
+      "label": "Verdict:",
+      "allowed": {
+        "substance": "This substance is not forbidden.",
+        "mixture": "This mixture is not forbidden.",
+        "substanceOrMixture": "This substance or mixture is not forbidden."
+      },
+      "forbidden": {
+        "casrn": {
+          "substance": "This substance is forbidden based on its CAS RN.",
+          "mixture": "This mixture is forbidden based on one or more CAS RNs."
+        },
+        "hCode": {
+          "substance": "This substance is forbidden based on one or more H codes.",
+          "mixture": "This mixture is forbidden based on one or more H codes.",
+          "substanceOrMixture": "This substance or mixture is forbidden based on one or more H codes."
+        }
+      }
+    }
+  },
+  "pictogram": {
+    "none": "No pictogram",
+    "GHS01": "Exploding bomb",
+    "GHS02": "Flame",
+    "GHS03": "Flame over circle",
+    "GHS04": "Gas cylinder",
+    "GHS05": "Corrosion",
+    "GHS06": "Skull and crossbones",
+    "GHS07": "Exclamation mark",
+    "GHS08": "Health hazard",
+    "GHS09": "Environment"
+  },
+  "footer": {
+    "version": "CPC version {version}",
+    "license": "GPL-3.0 License"
+  }
+}

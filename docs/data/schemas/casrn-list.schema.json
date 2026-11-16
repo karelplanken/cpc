@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casrn-list.schema.json",
+  "title": "A list of CAS RNs",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": { "$ref": "definitions.schema.json#/$defs/meta" },
+    "casrns": {
+      "type": "array",
+      "items": { "$ref": "definitions.schema.json#/$defs/casrn" },
+      "uniqueItems": true
+    }
+  },
+  "required": ["meta", "casrns"],
+  "additionalProperties": false
+}

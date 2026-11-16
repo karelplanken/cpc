@@ -1,0 +1,31 @@
+{
+  "$schema": "./schemas/h-code-list.schema.json",
+  "meta": {
+    "description": "H codes that make a substance or mixture forbidden (category 0) unless a tolerated CAS RN applies.",
+    "source": "Laboratory policy",
+    "updatedAt": "2025-01-02"
+  },
+  "codes": [
+    "H200",
+    "H201",
+    "H202",
+    "H203",
+    "H205",
+    "H230",
+    "H231",
+    "H250",
+    "H251",
+    "H260",
+    "H300",
+    "H310",
+    "H330",
+    "H340",
+    "H350",
+    "H360",
+    "H361",
+    "H370",
+    "H400",
+    "H410",
+    "H420"
+  ]
+}

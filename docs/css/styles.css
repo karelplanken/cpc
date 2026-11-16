@@ -1,107 +1,83 @@
-/* body,
+/* Custom styles on top of Bootstrap. */
+
+/* Always reserve room for the scrollbar, so the page does not shift sideways
+   when a report makes it taller than the window. */
 html {
-    background-color: #cccccc;
-} */
-
-body {
-    overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
-
-@media screen and (min-width: 900px) {
-    html {
-        /* margin-left: calc(100vw - 100%); */
-        margin-right: calc(100% - 100vw);
-    }
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-/* html {
-    overflow-y: scroll;
-} */
-
-
-
-@media screen and (min-width: 1400px) {
-    .svg-icon {
-        width: 4vw;
-    }
+.page-header > h1 {
+  grid-column: 2;
 }
 
-@media screen and (max-width: 1400px) {
-    .svg-icon {
-        width: 4vw;
-    }
+.page-header > .btn-group {
+  grid-column: 3;
+  justify-self: end;
 }
 
-@media screen and (max-width: 1200px) {
-    .svg-icon {
-        width: 5vw;
-    }
+@media (max-width: 575.98px) {
+  .page-header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .page-header > h1,
+  .page-header > .btn-group {
+    grid-column: 1;
+    justify-self: center;
+  }
 }
 
-@media screen and (max-width: 992px) {
-    .svg-icon {
-        width: 5vw;
-    }
+/* Icons in the headers of the information panels. */
+.info-icon {
+  width: 2em;
+  height: 2em;
+  fill: currentColor;
 }
 
-@media screen and (max-width: 768px) {
-    .svg-icon {
-        width: 6vw;
-    }
+/* Heading of a group of inputs with its add and remove buttons. */
+.field-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 576px) {
-    .svg-icon {
-        width: 8vw;
-    }
-}
-.btnhover:hover {
-    background-color: #dde0e3;
+.field-group-header > legend {
+  float: none;
+  width: auto;
+  margin: 0;
 }
 
-@media print and (min-width: 1400px) {
-    .svg-icon {
-        width: 4vw;
-    }
+.btn-step {
+  min-width: 2rem;
 }
 
-@media print and (max-width: 1400px) {
-    .svg-icon {
-        width: 4vw;
-    }
+/* Reports. */
+.report-section-title {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-@media print and (max-width: 1200px) {
-    .svg-icon {
-        width: 5vw;
-    }
-}
-
-@media print and (max-width: 992px) {
-    .svg-icon {
-        width: 5vw;
-    }
-}
-
-@media print and (max-width: 768px) {
-    .svg-icon {
-        width: 6vw;
-    }
-}
-
-@media print and (max-width: 576px) {
-    .svg-icon {
-        width: 8vw;
-    }
+/* GHS pictograms scale with the page, within sensible limits. */
+.pictogram {
+  width: clamp(2.25rem, 5vw, 3.5rem);
+  height: auto;
 }
 
 @media print {
-    [id^="compound"] {
-        box-shadow: none!important;
-    }
+  .report {
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
 
-    @page {
-        margin: 0.5cm;
-    }
+  @page {
+    margin: 0.5cm;
+  }
 }

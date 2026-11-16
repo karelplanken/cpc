@@ -1,0 +1,22 @@
+{
+  "$schema": "./schemas/casrn-list.schema.json",
+  "meta": {
+    "description": "CAS RNs that are on the SZW CMR list but are tolerated (category 2). Exposure must be registered.",
+    "source": "Laboratory policy",
+    "updatedAt": "2025-01-02"
+  },
+  "casrns": [
+    "64-17-5",
+    "69-72-7",
+    "76-03-9",
+    "100-42-5",
+    "108-88-3",
+    "110-54-3",
+    "302-01-2",
+    "1303-96-4",
+    "7664-93-9",
+    "7722-64-7",
+    "10043-35-3",
+    "14808-60-7"
+  ]
+}

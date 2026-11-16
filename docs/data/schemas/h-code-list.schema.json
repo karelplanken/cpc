@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "h-code-list.schema.json",
+  "title": "A list of single H codes",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": { "$ref": "definitions.schema.json#/$defs/meta" },
+    "codes": {
+      "type": "array",
+      "items": { "$ref": "definitions.schema.json#/$defs/singleHCode" },
+      "uniqueItems": true
+    }
+  },
+  "required": ["meta", "codes"],
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p-statements.schema.json",
+  "title": "Catalog of precautionary (P) statements",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": { "$ref": "definitions.schema.json#/$defs/meta" },
+    "statements": {
+      "description": "The statements, keyed by P code.",
+      "type": "object",
+      "propertyNames": { "$ref": "definitions.schema.json#/$defs/pCode" },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "statement": { "$ref": "definitions.schema.json#/$defs/localizedText" }
+        },
+        "required": ["statement"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["meta", "statements"],
+  "additionalProperties": false
+}

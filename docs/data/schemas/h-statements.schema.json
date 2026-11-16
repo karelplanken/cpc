@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "h-statements.schema.json",
+  "title": "Catalog of hazard (H) statements",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": { "$ref": "definitions.schema.json#/$defs/meta" },
+    "statements": {
+      "description": "The statements, keyed by H code.",
+      "type": "object",
+      "propertyNames": { "$ref": "definitions.schema.json#/$defs/hCode" },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "pictograms": {
+            "type": "array",
+            "items": { "$ref": "definitions.schema.json#/$defs/pictogram" },
+            "uniqueItems": true
+          },
+          "hazardClass": { "$ref": "definitions.schema.json#/$defs/localizedText" },
+          "statement": { "$ref": "definitions.schema.json#/$defs/localizedText" }
+        },
+        "required": ["pictograms", "hazardClass", "statement"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["meta", "statements"],
+  "additionalProperties": false
+}

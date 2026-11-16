@@ -1,0 +1,9 @@
+docs/vendor/
+docs/assets/
+coverage/
+playwright-report/
+test-results/
+package-lock.json
+tests/fixtures/
+decision_tree/
+LICENSE

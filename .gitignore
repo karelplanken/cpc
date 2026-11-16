@@ -38,3 +38,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+### Node ###
+node_modules/
+coverage/
+
+### Playwright ###
+playwright-report/
+test-results/

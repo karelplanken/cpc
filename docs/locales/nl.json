@@ -1,0 +1,153 @@
+{
+  "app": {
+    "title": "Compound Policy Check",
+    "loadError": "De app kon niet worden geladen. Controleer je verbinding en laad de pagina opnieuw."
+  },
+  "language": {
+    "label": "Taal",
+    "en": "English",
+    "nl": "Nederlands"
+  },
+  "info": {
+    "notice": {
+      "title": "Let op",
+      "body": "<strong class=\"text-danger\">Let op:</strong> advies is om de nieuwste versie van Firefox of Chrome te gebruiken; andere browsers zijn niet getest. De werking en/of uitkomst in andere browsers kan afwijken of leiden tot merkwaardige en misschien wel onbetrouwbare resultaten."
+    },
+    "explanation": {
+      "title": "Toelichting",
+      "intro": "<strong class=\"text-success\">Toelichting:</strong> deze app helpt je bij het controleren of een stof verboden is op <strong>het laboratorium</strong>. Met stof wordt hier een zuivere stof, dus één <abbr data-bs-toggle=\"tooltip\" title=\"Chemical Abstracts Service Registry Number\">CAS RN</abbr>, of een mengsel, dus meerdere CAS RNs, bedoeld. Let op: wanneer een stof niet verboden is, wil dat niet zeggen dat de stof is toegestaan, want dat hangt af van meer factoren. Je kunt een stof controleren met één van de twee invoermethoden: een bestandsinvoer of een handmatige invoer.",
+      "file": "Voor de bestandsinvoer heb je een <abbr data-bs-toggle=\"tooltip\" title=\"Safety Data Sheet\">SDS</abbr> nodig in de vorm van een <abbr data-bs-toggle=\"tooltip\" title=\"Portable Document Format\">pdf</abbr> met tekst, dus geen gescande afbeelding. Gebruik bij voorkeur een SDS van Sigma-Aldrich; deze blijkt in vergelijking met andere vollediger. Heb je moeite om een SDS te vinden, gebruik dan deze <a href=\"https://chemicalsafety.com/sds-search/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Safety Data Sheet Search</a> app. <strong>Let op:</strong> de SDS die je als invoer gebruikt moet ten minste één geldig CAS RN of geldige H code bevatten (uitgeschreven H zinnen worden niet gedetecteerd). De handmatige invoer vereist ten minste één CAS RN of H code; de P code is optioneel.",
+      "reports": "Voor telkens één stof kun je een rapport opmaken waarin uitsluitsel wordt gegeven of de stof verboden is. Voer je meerdere stoffen tegelijkertijd in, dan kun je, wanneer de uitslag <em>verboden</em> luidt, achteraf niet meer herleiden voor welke van de ingevoerde stoffen deze uitslag geldt. Je kunt rapporten stapelen: als je er één gegenereerd hebt, kun je een volgende maken door opnieuw een invoermethode te selecteren. De individuele rapporten zijn met een knop te verwijderen. De pagina opnieuw laden verwijdert alle invoer en rapporten en maakt een begin met een schone lei mogelijk."
+    },
+    "legend": {
+      "title": "Legenda",
+      "cat0": {
+        "term": "Cat 0:",
+        "description": "Niet toegestaan, omdat de stof voorkomt in de lijst van verboden H codes en/of de lijst van verboden CAS RNs."
+      },
+      "cat1": {
+        "term": "Cat 1:",
+        "description": "Een stof die hieronder valt is tijdelijk toegestaan, maar (nog) niet via deze app op te vragen."
+      },
+      "cat2": {
+        "term": "Cat 2:",
+        "description": "De stof komt voor in de lijst van verboden H codes en/of CAS RNs, maar is opgenomen in de lijst met expliciet toegestane stoffen omdat deze essentieel is voor praktijkonderwijs, projecten binnen het onderwijs of onderzoek, of \"veelvuldig\" wordt gebruikt. Een stof die hieronder valt is dus gedoogd."
+      },
+      "cat3": {
+        "term": "Cat 3:",
+        "description": "Niet verboden, omdat de stof niet voorkomt in de lijst van verboden H codes en/of CAS RNs."
+      }
+    }
+  },
+  "input": {
+    "heading": "Selecteer invoermethode:",
+    "file": "SDS pdf-bestand",
+    "manual": "Handmatige invoer"
+  },
+  "form": {
+    "valid": "Lijkt ok…"
+  },
+  "fileForm": {
+    "heading": "Bestand:",
+    "selectTooltip": "Selecteer bestand",
+    "submit": "Check SDS",
+    "submitTooltip": "Maak rapport",
+    "error": {
+      "noFile": "Selecteer een bestand…",
+      "notPdf": "Dit is geen pdf…",
+      "noText": "Geen tekst in pdf…",
+      "noIdentifiers": "Geen geldig CAS RN of geldige H code gevonden in deze pdf…",
+      "unreadable": "Deze pdf kon niet worden gelezen…"
+    }
+  },
+  "manualForm": {
+    "submit": "Check",
+    "submitTooltip": "Maak rapport",
+    "casrn": {
+      "heading": "CAS RN(s):",
+      "inputLabel": "CAS RN",
+      "add": "CAS RN toevoegen",
+      "remove": "CAS RN verwijderen",
+      "invalid": "Onjuist CAS RN…",
+      "required": "Verplicht als H code leeg is…"
+    },
+    "hCode": {
+      "heading": "H zin(nen):",
+      "inputLabel": "H code",
+      "add": "H code toevoegen",
+      "remove": "H code verwijderen",
+      "invalid": "Onjuiste H code…",
+      "required": "Verplicht als CAS RN leeg is…"
+    },
+    "pCode": {
+      "heading": "P zin(nen):",
+      "inputLabel": "P code",
+      "add": "P code toevoegen",
+      "remove": "P code verwijderen",
+      "invalid": "Onjuiste P code…"
+    }
+  },
+  "report": {
+    "input": "Invoer:",
+    "source": {
+      "manual": "handmatig"
+    },
+    "szwList": "SZW-lijst van {date}",
+    "remove": "Verwijder",
+    "casrn": {
+      "heading": "CAS nummer(s):",
+      "none": "Geen CAS RN gevonden.",
+      "status": {
+        "szwTolerated": "CAS RN komt voor in de SZW-lijst maar is niet verboden, want Cat. 2 stof.",
+        "szwListed": "Verboden op basis van CAS RN, want komt voor in de SZW-lijst.",
+        "hTolerated": "CAS RN heeft een verboden H code maar is gedoogd, want Cat. 2 stof.",
+        "notListed": "Niet verboden op basis van CAS RN, want komt niet voor in de SZW-lijst."
+      },
+      "registrationNoteLabel": "Let op:",
+      "registrationNote": "blootstelling moet geregistreerd worden!"
+    },
+    "hCode": {
+      "heading": "H zin(nen):",
+      "none": "Geen H code gevonden."
+    },
+    "pCode": {
+      "heading": "P zin(nen):",
+      "none": "Geen P code gevonden."
+    },
+    "verdict": {
+      "label": "Uitkomst:",
+      "allowed": {
+        "substance": "Deze stof is niet verboden.",
+        "mixture": "Dit mengsel is niet verboden.",
+        "substanceOrMixture": "Deze stof of dit mengsel is niet verboden."
+      },
+      "forbidden": {
+        "casrn": {
+          "substance": "Deze stof is verboden op basis van CAS RN.",
+          "mixture": "Dit mengsel is verboden op basis van één of meerdere CAS RN(s)."
+        },
+        "hCode": {
+          "substance": "Deze stof is verboden op basis van één of meerdere H code(s).",
+          "mixture": "Dit mengsel is verboden op basis van één of meerdere H code(s).",
+          "substanceOrMixture": "Deze stof of dit mengsel is verboden op basis van één of meerdere H code(s)."
+        }
+      }
+    }
+  },
+  "pictogram": {
+    "none": "Geen pictogram",
+    "GHS01": "Ontploffende bom",
+    "GHS02": "Vlam",
+    "GHS03": "Vlam boven een cirkel",
+    "GHS04": "Gasfles",
+    "GHS05": "Corrosie",
+    "GHS06": "Doodshoofd met gekruiste beenderen",
+    "GHS07": "Uitroepteken",
+    "GHS08": "Gezondheidsgevaar",
+    "GHS09": "Milieu"
+  },
+  "footer": {
+    "version": "CPC versie {version}",
+    "license": "GPL-3.0-licentie"
+  }
+}

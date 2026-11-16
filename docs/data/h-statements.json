@@ -1,0 +1,890 @@
+{
+  "$schema": "./schemas/h-statements.schema.json",
+  "meta": {
+    "description": "GHS/CLP hazard (H) statements with pictograms, hazard classes and statement texts per language.",
+    "source": "https://nl.wikipedia.org/wiki/Lijst_van_H-_en_P-zinnen",
+    "updatedAt": "2025-01-02"
+  },
+  "statements": {
+    "H200": {
+      "pictograms": ["GHS01"],
+      "hazardClass": {
+        "en": "Explosives, unstable explosives.",
+        "nl": "Ontplofbare stoffen, instabiel."
+      },
+      "statement": {
+        "en": "Unstable explosives.",
+        "nl": "Instabiele ontplofbare stof."
+      }
+    },
+    "H201": {
+      "pictograms": ["GHS01"],
+      "hazardClass": {
+        "en": "Explosives, Division 1.1.",
+        "nl": "Ontplofbare stoffen, subklasse 1.1."
+      },
+      "statement": {
+        "en": "Explosive; mass explosion hazard.",
+        "nl": "Ontplofbare stof: gevaar voor massa-explosie."
+      }
+    },
+    "H202": {
+      "pictograms": ["GHS01"],
+      "hazardClass": {
+        "en": "Explosives, Division 1.2.",
+        "nl": "Ontplofbare stoffen, subklasse 1.2."
+      },
+      "statement": {
+        "en": "Explosive; severe projection hazard.",
+        "nl": "Ontplofbare stof, ernstig gevaar voor scherfwerking."
+      }
+    },
+    "H203": {
+      "pictograms": ["GHS01"],
+      "hazardClass": {
+        "en": "Explosives, Division 1.3.",
+        "nl": "Ontplofbare stoffen, subklasse 1.3."
+      },
+      "statement": {
+        "en": "Explosive; fire, blast or projection hazard.",
+        "nl": "Ontplofbare stof; gevaar voor brand, luchtdrukwerking of scherfwerking."
+      }
+    },
+    "H204": {
+      "pictograms": ["GHS01"],
+      "hazardClass": {
+        "en": "Explosives, Division 1.4.",
+        "nl": "Ontplofbare stoffen, subklasse 1.4."
+      },
+      "statement": {
+        "en": "Fire or projection hazard.",
+        "nl": "Gevaar voor brand of scherfwerking."
+      }
+    },
+    "H205": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Explosives, Division 1.5.",
+        "nl": "Ontplofbare stoffen, subklasse 1.5."
+      },
+      "statement": {
+        "en": "May mass explode in fire.",
+        "nl": "Gevaar voor massa-explosie bij brand."
+      }
+    },
+    "H207": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Explosives, Division 1.7.",
+        "nl": "Ontplofbare stoffen, subklasse 1.7."
+      },
+      "statement": {
+        "en": "May cause or intensify fire.",
+        "nl": "Kan brand veroorzaken of brand bevorderen."
+      }
+    },
+    "H220": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Flammable gases, Category 1.",
+        "nl": "Ontvlambare gassen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Extremely flammable gas.",
+        "nl": "Zeer licht ontvlambaar gas."
+      }
+    },
+    "H221": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Flammable gases, Category 2.",
+        "nl": "Ontvlambare gassen, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Flammable gas.",
+        "nl": "Ontvlambaar gas."
+      }
+    },
+    "H222": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Aerosols, Category 1.",
+        "nl": "Aerosolen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Extremely flammable aerosol.",
+        "nl": "Zeer licht ontvlambare aerosol."
+      }
+    },
+    "H223": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Aerosols, Category 2.",
+        "nl": "Aerosolen, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Flammable aerosol.",
+        "nl": "Ontvlambare aerosol."
+      }
+    },
+    "H224": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Flammable liquids, Category 1.",
+        "nl": "Ontvlambare vloeistoffen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Extremely flammable liquid and vapor.",
+        "nl": "Zeer licht ontvlambare vloeistof en damp."
+      }
+    },
+    "H225": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Flammable liquids, Category 2.",
+        "nl": "Ontvlambare vloeistoffen, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Highly flammable liquid and vapor.",
+        "nl": "Licht ontvlambare vloeistof en damp."
+      }
+    },
+    "H226": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Flammable liquids, Category 3.",
+        "nl": "Ontvlambare vloeistoffen, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Flammable liquid and vapor.",
+        "nl": "Ontvlambare vloeistof en damp."
+      }
+    },
+    "H227": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Flammable liquids, Category 4.",
+        "nl": "Ontvlambare vloeistoffen, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "Combustible liquid.",
+        "nl": "Brandbare vloeistof."
+      }
+    },
+    "H228": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Flammable solids, Categories 1 and 2.",
+        "nl": "Ontvlambare vaste stoffen, gevarencategorie 1 en 2."
+      },
+      "statement": {
+        "en": "Flammable solid.",
+        "nl": "Ontvlambare vaste stof."
+      }
+    },
+    "H229": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Aerosols, Categories 1, 2 and 3.",
+        "nl": "Aerosolen, gevarencategorieën 1, 2 en 3."
+      },
+      "statement": {
+        "en": "Pressurized container: may burst if heated.",
+        "nl": "Houder onder druk: kan openbarsten bij verhitting."
+      }
+    },
+    "H230": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Flammable gases (including chemically unstable gases), Category A.",
+        "nl": "Ontvlambare gassen (waaronder chemisch instabiele gassen), gevarencategorie A."
+      },
+      "statement": {
+        "en": "May react explosively even in the absence of air.",
+        "nl": "Kan explosief reageren zelfs in afwezigheid van lucht."
+      }
+    },
+    "H231": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Flammable gases (including chemically unstable gases), Category B.",
+        "nl": "Ontvlambare gassen (waaronder chemisch instabiele gassen), gevarencategorie B."
+      },
+      "statement": {
+        "en": "May react explosively even in the absence of air at elevated pressure and/or temperature.",
+        "nl": "Kan explosief reageren zelfs in afwezigheid van lucht bij verhoogde druk en/of temperatuur."
+      }
+    },
+    "H240": {
+      "pictograms": ["GHS01"],
+      "hazardClass": {
+        "en": "Self-reactive substances and mixtures, Type A; Organic peroxides, Type A.",
+        "nl": "Zelfontledende stoffen en mengsels, type A; Organische peroxiden, type A."
+      },
+      "statement": {
+        "en": "Heating may cause an explosion.",
+        "nl": "Ontploffingsgevaar bij verwarming."
+      }
+    },
+    "H241": {
+      "pictograms": ["GHS01", "GHS02"],
+      "hazardClass": {
+        "en": "Self-reactive substances and mixtures, Type B; Organic peroxides, Type B.",
+        "nl": "Zelfontledende stoffen en mengsels, type B; Organische peroxiden, type B."
+      },
+      "statement": {
+        "en": "Heating may cause a fire or explosion.",
+        "nl": "Brand- of ontploffingsgevaar bij verwarming."
+      }
+    },
+    "H242": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Self-reactive substances and mixtures, Types C, D, E and F; Organic peroxides, Types C, D, E and F.",
+        "nl": "Zelfontledende stoffen en mengsels, type C, D, E en F; Organische peroxiden, type C, D, E en F."
+      },
+      "statement": {
+        "en": "Heating may cause a fire.",
+        "nl": "Brandgevaar bij verwarming."
+      }
+    },
+    "H250": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Pyrophoric liquids, Category 1; Pyrophoric solids, Category 1.",
+        "nl": "Pyrofore vloeistoffen, gevarencategorie 1; Pyrofore vaste stoffen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Catches fire spontaneously if exposed to air.",
+        "nl": "Vat spontaan vlam bij blootstelling aan lucht."
+      }
+    },
+    "H251": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Self-heating substances and mixtures, Category 1.",
+        "nl": "Voor zelfverhitting vatbare stoffen en mengsels, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Self-heating; may catch fire.",
+        "nl": "Vatbaar voor zelfverhitting: kan vlam vatten."
+      }
+    },
+    "H252": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Self-heating substances and mixtures, Category 2.",
+        "nl": "Voor zelfverhitting vatbare stoffen en mengsels, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Self-heating in large quantities; may catch fire.",
+        "nl": "In grote hoeveelheden vatbaar voor zelfverhitting: kan vlam vatten."
+      }
+    },
+    "H260": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Substances and mixtures which in contact with water emit flammable gases, Category 1.",
+        "nl": "Stoffen en mengsels die in contact met water ontvlambare gassen ontwikkelen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "In contact with water releases flammable gases which may ignite spontaneously.",
+        "nl": "In contact met water komen ontvlambare gassen vrij die spontaan kunnen ontbranden."
+      }
+    },
+    "H261": {
+      "pictograms": ["GHS02"],
+      "hazardClass": {
+        "en": "Substances and mixtures which in contact with water emit flammable gases, Categories 2 and 3.",
+        "nl": "Stoffen en mengsels die in contact met water ontvlambare gassen ontwikkelen, gevarencategorie 2 en 3."
+      },
+      "statement": {
+        "en": "In contact with water releases flammable gases.",
+        "nl": "In contact met water komen ontvlambare gassen vrij."
+      }
+    },
+    "H270": {
+      "pictograms": ["GHS03"],
+      "hazardClass": {
+        "en": "Oxidizing gases, Category 1.",
+        "nl": "Oxiderende gassen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "May cause or intensify fire; oxidizer.",
+        "nl": "Kan brand veroorzaken of bevorderen; oxiderend."
+      }
+    },
+    "H271": {
+      "pictograms": ["GHS03"],
+      "hazardClass": {
+        "en": "Oxidizing liquids, Category 1; Oxidizing solids, Category 1.",
+        "nl": "Oxiderende vloeistoffen, gevarencategorie 1; Oxiderende vaste stoffen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "May cause fire or explosion; strong oxidizer.",
+        "nl": "Kan brand of ontploffingen veroorzaken; sterk oxiderend."
+      }
+    },
+    "H272": {
+      "pictograms": ["GHS03"],
+      "hazardClass": {
+        "en": "Oxidizing liquids, Categories 2 and 3; Oxidizing solids, Categories 2 and 3.",
+        "nl": "Oxiderende vloeistoffen, gevarencategorie 2 en 3; Oxiderende vaste stoffen, gevarencategorie 2 en 3."
+      },
+      "statement": {
+        "en": "May intensify fire; oxidizer.",
+        "nl": "Kan brand bevorderen; oxiderend."
+      }
+    },
+    "H280": {
+      "pictograms": ["GHS04"],
+      "hazardClass": {
+        "en": "Gases under pressure: compressed gas; liquefied gas; dissolved gas.",
+        "nl": "Gassen onder druk: samengeperst gas; vloeibaar gas; opgelost gas."
+      },
+      "statement": {
+        "en": "Contains gas under pressure; may explode if heated.",
+        "nl": "Bevat gas onder druk; kan ontploffen bij verwarming."
+      }
+    },
+    "H281": {
+      "pictograms": ["GHS04"],
+      "hazardClass": {
+        "en": "Gases under pressure: refrigerated liquefied gas.",
+        "nl": "Gassen onder druk: sterk gekoeld vloeibaar gas."
+      },
+      "statement": {
+        "en": "Contains refrigerated gas; may cause cryogenic burns or injury.",
+        "nl": "Bevat sterk gekoeld gas; kan cryogene brandwonden of letsel veroorzaken."
+      }
+    },
+    "H290": {
+      "pictograms": ["GHS05"],
+      "hazardClass": {
+        "en": "Corrosive to metals, Category 1.",
+        "nl": "Bijtend voor metalen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "May be corrosive to metals.",
+        "nl": "Kan bijtend zijn voor metalen."
+      }
+    },
+    "H300": {
+      "pictograms": ["GHS06"],
+      "hazardClass": {
+        "en": "Acute oral toxicity, Categories 1 and 2.",
+        "nl": "Acute orale toxiciteit, gevarencategorie 1 en 2."
+      },
+      "statement": {
+        "en": "Fatal if swallowed.",
+        "nl": "Dodelijk bij inslikken."
+      }
+    },
+    "H301": {
+      "pictograms": ["GHS06"],
+      "hazardClass": {
+        "en": "Acute oral toxicity, Category 3.",
+        "nl": "Acute orale toxiciteit, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Toxic if swallowed.",
+        "nl": "Giftig bij inslikken."
+      }
+    },
+    "H302": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Acute oral toxicity, Category 4.",
+        "nl": "Acute orale toxiciteit, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "Harmful if swallowed.",
+        "nl": "Schadelijk bij inslikken."
+      }
+    },
+    "H304": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Aspiration hazard, Category 1.",
+        "nl": "Aspiratiegevaar, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "May be fatal if swallowed and enters airways.",
+        "nl": "Kan dodelijk zijn als de stof bij inslikken in de luchtwegen terechtkomt."
+      }
+    },
+    "H310": {
+      "pictograms": ["GHS06"],
+      "hazardClass": {
+        "en": "Acute dermal toxicity, Categories 1 and 2.",
+        "nl": "Acute dermale toxiciteit, gevarencategorie 1 en 2."
+      },
+      "statement": {
+        "en": "Fatal in contact with skin.",
+        "nl": "Dodelijk bij contact met de huid."
+      }
+    },
+    "H311": {
+      "pictograms": ["GHS06"],
+      "hazardClass": {
+        "en": "Acute dermal toxicity, Category 3.",
+        "nl": "Acute dermale toxiciteit, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Toxic in contact with skin.",
+        "nl": "Giftig bij contact met de huid."
+      }
+    },
+    "H312": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Acute dermal toxicity, Category 4.",
+        "nl": "Acute dermale toxiciteit, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "Harmful in contact with skin.",
+        "nl": "Schadelijk bij contact met de huid."
+      }
+    },
+    "H314": {
+      "pictograms": ["GHS05"],
+      "hazardClass": {
+        "en": "Skin corrosion/irritation, Categories 1A, 1B and 1C.",
+        "nl": "Huidcorrosie/-irritatie, gevarencategorie 1A, 1B en 1C."
+      },
+      "statement": {
+        "en": "Causes severe skin burns and eye damage.",
+        "nl": "Veroorzaakt ernstige brandwonden en oogletsels."
+      }
+    },
+    "H315": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Skin corrosion/irritation, Category 2.",
+        "nl": "Huidcorrosie/-irritatie, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Causes skin irritation.",
+        "nl": "Veroorzaakt huidirritatie."
+      }
+    },
+    "H317": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Skin sensitization, Category 1.",
+        "nl": "Huidsensibilisatie, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "May cause an allergic skin reaction.",
+        "nl": "Kan een allergische huidreactie veroorzaken."
+      }
+    },
+    "H318": {
+      "pictograms": ["GHS05"],
+      "hazardClass": {
+        "en": "Serious eye damage/eye irritation, Category 1.",
+        "nl": "Ernstig oogletsel/oogirritatie, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Causes serious eye damage.",
+        "nl": "Veroorzaakt ernstig oogletsel."
+      }
+    },
+    "H319": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Serious eye damage/eye irritation, Category 2A.",
+        "nl": "Ernstig oogletsel/oogirritatie, gevarencategorie 2A."
+      },
+      "statement": {
+        "en": "Causes serious eye irritation.",
+        "nl": "Veroorzaakt ernstige oogirritatie."
+      }
+    },
+    "H330": {
+      "pictograms": ["GHS06"],
+      "hazardClass": {
+        "en": "Acute inhalation toxicity, Categories 1 and 2.",
+        "nl": "Acute toxiciteit bij inademing, gevarencategorie 1 en 2."
+      },
+      "statement": {
+        "en": "Fatal if inhaled.",
+        "nl": "Dodelijk bij inademing."
+      }
+    },
+    "H331": {
+      "pictograms": ["GHS06"],
+      "hazardClass": {
+        "en": "Acute inhalation toxicity, Category 3.",
+        "nl": "Acute toxiciteit bij inademing, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Toxic if inhaled.",
+        "nl": "Giftig bij inademing."
+      }
+    },
+    "H332": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Acute inhalation toxicity, Category 4.",
+        "nl": "Acute toxiciteit bij inademing, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "Harmful if inhaled.",
+        "nl": "Schadelijk bij inademing."
+      }
+    },
+    "H334": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Respiratory sensitization, Category 1.",
+        "nl": "Sensibilisatie van de luchtwegen, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "May cause allergy or asthma symptoms or breathing difficulties if inhaled.",
+        "nl": "Kan bij inademing allergie- of astmasymptomen of ademhalingsmoeilijkheden veroorzaken."
+      }
+    },
+    "H335": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Specific target organ toxicity, single exposure, Category 3, respiratory tract irritation.",
+        "nl": "Specifieke doelorgaantoxiciteit bij eenmalige blootstelling, gevarencategorie 3, irritatie van de luchtwegen."
+      },
+      "statement": {
+        "en": "May cause respiratory irritation.",
+        "nl": "Kan irritatie van de luchtwegen veroorzaken."
+      }
+    },
+    "H336": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Specific target organ toxicity, single exposure, Category 3, narcotic effects.",
+        "nl": "Specifieke doelorgaantoxiciteit bij eenmalige blootstelling, gevarencategorie 3, narcotische werking."
+      },
+      "statement": {
+        "en": "May cause drowsiness or dizziness.",
+        "nl": "Kan slaperigheid of duizeligheid veroorzaken."
+      }
+    },
+    "H340": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Germ cell mutagenicity, Categories 1A and 1B.",
+        "nl": "Mutageniteit in geslachtscellen, gevarencategorie 1A en 1B."
+      },
+      "statement": {
+        "en": "May cause genetic defects <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Kan genetische schade veroorzaken <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H341": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Germ cell mutagenicity, Category 2.",
+        "nl": "Mutageniteit in geslachtscellen, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Suspected of causing genetic defects <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Verdacht van het veroorzaken van genetische schade <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H350": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Carcinogenicity, Categories 1A and 1B.",
+        "nl": "Kankerverwekkendheid, gevarencategorie 1A en 1B."
+      },
+      "statement": {
+        "en": "May cause cancer <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Kan kanker veroorzaken <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H351": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Carcinogenicity, Category 2.",
+        "nl": "Kankerverwekkendheid, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Suspected of causing cancer <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Verdacht van het veroorzaken van kanker <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H360": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Reproductive toxicity, Categories 1A and 1B.",
+        "nl": "Voortplantingstoxiciteit, gevarencategorie 1A en 1B."
+      },
+      "statement": {
+        "en": "May damage fertility or the unborn child <state specific effect if known> <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Kan de vruchtbaarheid of het ongeboren kind schaden <specifiek effect vermelden indien bekend> <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H361": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Reproductive toxicity, Category 2.",
+        "nl": "Voortplantingstoxiciteit, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Suspected of damaging fertility or the unborn child <state specific effect if known> <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Kan mogelijk de vruchtbaarheid of het ongeboren kind schaden <specifiek effect vermelden indien bekend> <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H362": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Reproductive toxicity, additional category, effects on or via lactation.",
+        "nl": "Voortplantingstoxiciteit, aanvullende categorie, effecten op en via lactatie."
+      },
+      "statement": {
+        "en": "May cause harm to breast-fed children.",
+        "nl": "Kan schadelijk zijn via de borstvoeding."
+      }
+    },
+    "H370": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Specific target organ toxicity, single exposure, Category 1.",
+        "nl": "Specifieke doelorgaantoxiciteit bij eenmalige blootstelling, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Causes damage to organs <or state all organs affected, if known> <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Veroorzaakt schade aan organen <of alle betrokken organen vermelden indien bekend> <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H371": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Specific target organ toxicity, single exposure, Category 2.",
+        "nl": "Specifieke doelorgaantoxiciteit bij eenmalige blootstelling, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "May cause damage to organs <or state all organs affected, if known> <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Kan schade aan organen <of alle betrokken organen vermelden indien bekend> veroorzaken <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H372": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Specific target organ toxicity, repeated exposure, Category 1.",
+        "nl": "Specifieke doelorgaantoxiciteit bij herhaalde blootstelling, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Causes damage to organs <or state all organs affected, if known> through prolonged or repeated exposure <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Veroorzaakt schade aan organen <of alle betrokken organen vermelden indien bekend> bij langdurige of herhaalde blootstelling <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H373": {
+      "pictograms": ["GHS08"],
+      "hazardClass": {
+        "en": "Specific target organ toxicity, repeated exposure, Category 2.",
+        "nl": "Specifieke doelorgaantoxiciteit bij herhaalde blootstelling, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "May cause damage to organs <or state all organs affected, if known> through prolonged or repeated exposure <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>.",
+        "nl": "Kan schade aan organen <of alle betrokken organen vermelden indien bekend> veroorzaken bij langdurige of herhaalde blootstelling <blootstellingsroute vermelden indien afdoende bewezen is dat het gevaar bij andere blootstellingsroutes niet aanwezig is>."
+      }
+    },
+    "H300+H310": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity and acute dermal toxicity, Categories 1 and 2.",
+        "nl": "Acute orale toxiciteit en acute dermale toxiciteit, gevarencategorie 1 en 2."
+      },
+      "statement": {
+        "en": "Fatal if swallowed or in contact with skin.",
+        "nl": "Dodelijk bij inslikken en bij contact met de huid."
+      }
+    },
+    "H300+H330": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity and acute inhalation toxicity, Categories 1 and 2.",
+        "nl": "Acute orale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 1 en 2."
+      },
+      "statement": {
+        "en": "Fatal if swallowed or if inhaled.",
+        "nl": "Dodelijk bij inslikken en bij inademing."
+      }
+    },
+    "H310+H330": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute dermal toxicity and acute inhalation toxicity, Categories 1 and 2.",
+        "nl": "Acute dermale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 1 en 2."
+      },
+      "statement": {
+        "en": "Fatal in contact with skin or if inhaled.",
+        "nl": "Dodelijk bij contact met de huid en bij inademing."
+      }
+    },
+    "H300+H310+H330": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity, acute dermal toxicity and acute inhalation toxicity, Categories 1 and 2.",
+        "nl": "Acute orale toxiciteit, acute dermale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 1 en 2."
+      },
+      "statement": {
+        "en": "Fatal if swallowed, in contact with skin or if inhaled.",
+        "nl": "Dodelijk bij inslikken, bij contact met de huid en bij inademing."
+      }
+    },
+    "H301+H311": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity and acute dermal toxicity, Category 3.",
+        "nl": "Acute orale toxiciteit en acute dermale toxiciteit, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Toxic if swallowed or in contact with skin.",
+        "nl": "Giftig bij inslikken en bij contact met de huid."
+      }
+    },
+    "H301+H331": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity and acute inhalation toxicity, Category 3.",
+        "nl": "Acute orale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Toxic if swallowed or if inhaled.",
+        "nl": "Giftig bij inslikken en bij inademing."
+      }
+    },
+    "H311+H331": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute dermal toxicity and acute inhalation toxicity, Category 3.",
+        "nl": "Acute dermale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Toxic in contact with skin or if inhaled.",
+        "nl": "Giftig bij contact met de huid en bij inademing."
+      }
+    },
+    "H301+H311+H331": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity, acute dermal toxicity and acute inhalation toxicity, Category 3.",
+        "nl": "Acute orale toxiciteit, acute dermale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Toxic if swallowed, in contact with skin or if inhaled.",
+        "nl": "Giftig bij inslikken, bij contact met de huid en bij inademing."
+      }
+    },
+    "H302+H312": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity and acute dermal toxicity, Category 4.",
+        "nl": "Acute orale toxiciteit en acute dermale toxiciteit, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "Harmful if swallowed or in contact with skin.",
+        "nl": "Schadelijk bij inslikken en bij contact met de huid."
+      }
+    },
+    "H302+H332": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity and acute inhalation toxicity, Category 4.",
+        "nl": "Acute orale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "Harmful if swallowed or if inhaled.",
+        "nl": "Schadelijk bij inslikken en bij inademing."
+      }
+    },
+    "H312+H332": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute dermal toxicity and acute inhalation toxicity, Category 4.",
+        "nl": "Acute dermale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "Harmful in contact with skin or if inhaled.",
+        "nl": "Schadelijk bij contact met de huid en bij inademing."
+      }
+    },
+    "H302+H312+H332": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Acute oral toxicity, acute dermal toxicity and acute inhalation toxicity, Category 4.",
+        "nl": "Acute orale toxiciteit, acute dermale toxiciteit en acute toxiciteit bij inademing, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "Harmful if swallowed, in contact with skin or if inhaled.",
+        "nl": "Schadelijk bij inslikken, bij contact met de huid en bij inademing."
+      }
+    },
+    "H400": {
+      "pictograms": ["GHS09"],
+      "hazardClass": {
+        "en": "Hazardous to the aquatic environment, acute hazard, Category 1.",
+        "nl": "Acuut gevaar voor het aquatisch milieu, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Very toxic to aquatic life.",
+        "nl": "Zeer giftig voor in het water levende organismen."
+      }
+    },
+    "H410": {
+      "pictograms": ["GHS09"],
+      "hazardClass": {
+        "en": "Hazardous to the aquatic environment, chronic hazard, Category 1.",
+        "nl": "Chronisch gevaar voor het aquatisch milieu, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Very toxic to aquatic life with long lasting effects.",
+        "nl": "Zeer giftig voor in het water levende organismen, met langdurige gevolgen."
+      }
+    },
+    "H411": {
+      "pictograms": ["GHS09"],
+      "hazardClass": {
+        "en": "Hazardous to the aquatic environment, chronic hazard, Category 2.",
+        "nl": "Chronisch gevaar voor het aquatisch milieu, gevarencategorie 2."
+      },
+      "statement": {
+        "en": "Toxic to aquatic life with long lasting effects.",
+        "nl": "Giftig voor in het water levende organismen, met langdurige gevolgen."
+      }
+    },
+    "H412": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Hazardous to the aquatic environment, chronic hazard, Category 3.",
+        "nl": "Chronisch gevaar voor het aquatisch milieu, gevarencategorie 3."
+      },
+      "statement": {
+        "en": "Harmful to aquatic life with long lasting effects.",
+        "nl": "Schadelijk voor in het water levende organismen, met langdurige gevolgen."
+      }
+    },
+    "H413": {
+      "pictograms": [],
+      "hazardClass": {
+        "en": "Hazardous to the aquatic environment, chronic hazard, Category 4.",
+        "nl": "Chronisch gevaar voor het aquatisch milieu, gevarencategorie 4."
+      },
+      "statement": {
+        "en": "May cause long lasting harmful effects to aquatic life.",
+        "nl": "Kan langdurige schadelijk gevolgen voor in het water levende organismen hebben."
+      }
+    },
+    "H420": {
+      "pictograms": ["GHS07"],
+      "hazardClass": {
+        "en": "Hazardous to the ozone layer, Category 1.",
+        "nl": "Gevaarlijk voor de ozonlaag, gevarencategorie 1."
+      },
+      "statement": {
+        "en": "Harms public health and the environment by destroying ozone in the upper atmosphere.",
+        "nl": "Schadelijk voor de volksgezondheid en het milieu door afbraak van ozon in de bovenste lagen van de atmosfeer."
+      }
+    }
+  }
+}
